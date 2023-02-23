@@ -1,5 +1,6 @@
 import React from "react";
 import { IoSettingsOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 interface NavData {
   name: string;
@@ -23,12 +24,26 @@ const Nav = () => {
             {navData.map((item, index) => {
               return (
                 <li key={index}>
-                  <p>{item.name}</p>
+                  <motion.p whileHover={{ color: "#D6532B", scale: 1.1 }}>
+                    {item.name}
+                  </motion.p>
                 </li>
               );
             })}
           </ul>
-          <IoSettingsOutline size={25} className="text-accent gap" />
+          <motion.div
+            whileHover={{ rotate: ["-360deg", "0deg"] }}
+            transition={{
+              rotate: {
+                duration: 1.8,
+                repeat: 1,
+              },
+            }}>
+            <IoSettingsOutline
+              size={25}
+              className="text-accent cursor-pointer"
+            />
+          </motion.div>
         </div>
       </nav>
     </>

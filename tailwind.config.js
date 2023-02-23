@@ -18,6 +18,7 @@ module.exports = {
       white: "#FFFFFF",
       black: "#000000",
       background: "#FCFCFD",
+      heroBackground: "#EFF2F1",
     },
   },
   plugins: [],
