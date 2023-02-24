@@ -17,10 +17,10 @@ const navData: NavData[] = [
 const Nav = () => {
   return (
     <>
-      <nav className="flex justify-between px-20 pt-8 text-primary font-medium">
-        <p>Tyler Duncan Sotubo</p>
+      <nav className="flex justify-between md:px-20 px-6 pt-8 md:text-sm text-primary font-medium">
+        <p className=" text-xs md:text-sm">Tyler Duncan Sotubo</p>
         <div className="flex gap-10">
-          <ul className="flex gap-14 text-[16px] capitalize cursor-pointer">
+          <ul className="hidden md:flex gap-14 capitalize cursor-pointer">
             {navData.map((item, index) => {
               return (
                 <li key={index}>

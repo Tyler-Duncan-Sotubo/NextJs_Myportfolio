@@ -11,9 +11,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" bg-background h-screen">
-        <Nav />
-        <Hero />
+      <main className=" bg-background">
+        <section className=" h-screen">
+          <Nav />
+          <Hero />
+        </section>
       </main>
     </>
   );
