@@ -29,8 +29,8 @@ const arrowTransition = {
 
 const Hero = () => {
   return (
-    <section className="text-primary h-4/5 mt-16">
-      <div className="flex flex-col items-center relative justify-center h-4/5">
+    <section className="text-primary py-20 bg-background">
+      <div className="flex flex-col items-center relative justify-center mt-24">
         <motion.div
           animate={{ scale: 3 }}
           transition={{ scale: arrowTransition }}
@@ -52,12 +52,12 @@ const Hero = () => {
             </motion.li>
           ))}
         </motion.div>
-        <div className="mt-12 w-3/4">
-          <h2 className=" text-2xl md:text-5xl text-center font-medium leading-20 capitalize">
+        <div className="mt-12 max-w-screen-lg">
+          <h1 className="text-2xl md:text-5xl text-center font-medium leading-20 capitalize">
             CS graduate and Adept Front-End developer, Focusing On Mobile-First
             Development
-          </h2>
-          <div className="flex justify-center items-center mt-4 gap-5">
+          </h1>
+          <div className="flex justify-center items-center my-4 gap-5 ">
             <motion.div
               animate={{ rotate: ["-360deg", "0deg"] }}
               transition={{
@@ -74,26 +74,22 @@ const Hero = () => {
               <span className=" text-accent font-medium ml-1">React JS</span>,
               <span className=" text-accent font-medium ml-1">Next JS</span> for
               Better SEO and
-              <span className=" text-accent font-medium ml-1">
+              <span className=" text-accent font-medium ml-1 mr-1">
                 Tailwind
-              </span>{" "}
+              </span>
               for CSS
             </p>
-            <motion.div
-              animate={{ scale: 2 }}
-              transition={{ scale: arrowTransition }}
-              className="relative md:w-2 md:h-2 w-3 h-3">
-              <Image src={javascript} alt="" fill />
-            </motion.div>
           </div>
         </div>
       </div>
-      <motion.div
-        animate={{ y: ["10px", "-10px", "10px"] }}
-        transition={{ y: arrowTransition }}
-        className="mt-16 flex justify-center">
-        <FaArrowDown className="text-accent text-3xl" />
-      </motion.div>
+      <div className=" mt-64 px-20 flex item-center gap-2">
+        <motion.div
+          animate={{ y: ["10px", "-10px", "10px"] }}
+          transition={{ y: arrowTransition }}>
+          <FaArrowDown className="text-accent text-lg cursor-pointer" />
+        </motion.div>
+        <p className=" text-sm">Scroll</p>
+      </div>
     </section>
   );
 };

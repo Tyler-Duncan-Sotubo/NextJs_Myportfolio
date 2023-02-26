@@ -1,5 +1,7 @@
 import Nav from "@/components/common/nav/Nav";
+import About from "@/components/home/About";
 import Hero from "@/components/home/Hero";
+import Projects from "@/components/home/Projects";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,11 +13,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" bg-background">
-        <section className=" h-screen">
-          <Nav />
-          <Hero />
-        </section>
+      <main>
+        <Nav />
+        <Hero />
+        <About />
+        <Projects />
       </main>
     </>
   );
