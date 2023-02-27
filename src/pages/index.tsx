@@ -2,6 +2,7 @@ import Nav from "@/components/common/nav/Nav";
 import About from "@/components/home/About";
 import Hero from "@/components/home/Hero";
 import Projects from "@/components/home/Projects";
+import Skills from "@/components/home/Skills";
 import Head from "next/head";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
+        <Skills />
       </main>
     </>
   );
