@@ -10,12 +10,12 @@ import Button from "../common/button";
 
 const Projects = () => {
   return (
-    <section id="projects" className=" bg-background">
+    <section id="projects" className=" bg-skin-background">
       <div className="max-w-screen-xl py-10 mx-auto">
-        <h2 className="mb-2 text-2xl text-center font-medium uppercase text-accent">
+        <h2 className="mb-2 text-2xl text-center font-medium uppercase text-skin-accent">
           <span className=" text-primary">My </span> Projects
         </h2>
-        <p className="text-3xl text-center text-primary font-bold w-2/5 mx-auto">
+        <p className="text-3xl text-center text-skin-primary font-bold w-2/5 mx-auto">
           Take a look some of my featured projects
         </p>
         <div className="mt-10">
@@ -24,12 +24,12 @@ const Projects = () => {
               return (
                 <div
                   key={index}
-                  className="py-16 flex flex-row-reverse gap-10 border-b-[.2px] border-accent">
+                  className="py-16 flex flex-row-reverse gap-10 border-b-[.2px] border-skin-accent">
                   <div className="relative h-[330px] w-1/2">
                     <Image src={item.img} alt="" fill />
                   </div>
                   <div className="w-1/2 mt-7">
-                    <p className=" text-xl uppercase font-semibold text-primary">
+                    <p className=" text-xl uppercase font-semibold text-skin-primary">
                       {item.name}
                     </p>
                     <div className="flex gap-2 mt-4 flex-wrap ">
@@ -45,15 +45,17 @@ const Projects = () => {
                         href={item.source}
                         target="_blank"
                         className="flex items-center gap-2">
-                        <FaGithub className=" text-accent" />
-                        <p className=" text-accent font-semibold">View Code</p>
+                        <FaGithub className=" text-skin-accent" />
+                        <p className=" text-skin-accent font-semibold hover:scale-90">
+                          View Code
+                        </p>
                       </Link>
                       <Link
                         href={item.web}
                         target="_blank"
                         className="flex items-center gap-2">
-                        <FaLink className=" text-accent" />
-                        <p className=" text-accent font-semibold">
+                        <FaLink className=" text-skin-accent" />
+                        <p className=" text-skin-accent font-semibold hover:scale-90">
                           Visit Website
                         </p>
                       </Link>
@@ -65,12 +67,12 @@ const Projects = () => {
               return (
                 <div
                   key={index}
-                  className="py-16 flex gap-10 border-b-[.2px] border-primary">
+                  className="py-16 flex gap-10 border-b-[.2px] last:border-none border-skin-primary">
                   <div className="relative h-[330px] w-1/2">
                     <Image src={item.img} alt="" fill />
                   </div>
                   <div className="w-1/2 mt-7">
-                    <p className=" text-xl uppercase font-semibold text-primary">
+                    <p className=" text-xl uppercase font-semibold text-skin-primary">
                       {item.name}
                     </p>
                     <div className="flex gap-2 mt-4 flex-wrap">
@@ -86,15 +88,17 @@ const Projects = () => {
                         href={item.source}
                         target="_blank"
                         className="flex items-center gap-2">
-                        <FaGithub className=" text-accent" />
-                        <p className=" text-accent font-semibold">View Code</p>
+                        <FaGithub className=" text-skin-accent" />
+                        <p className=" text-skin-accent font-semibold hover:scale-90">
+                          View Code
+                        </p>
                       </Link>
                       <Link
                         href={item.web}
                         target="_blank"
                         className="flex items-center gap-2">
-                        <FaLink className=" text-accent" />
-                        <p className=" text-accent font-semibold">
+                        <FaLink className=" text-skin-accent" />
+                        <p className=" text-skin-accent font-semibold hover:scale-90">
                           Visit Website
                         </p>
                       </Link>
@@ -106,7 +110,11 @@ const Projects = () => {
           })}
         </div>
         <div className="flex justify-center items-center mt-10">
-          <Button name="View All Projects" color="bg-accent" icon={<FaEye />} />
+          <Button
+            name="View All Projects"
+            color="bg-skin-accent"
+            icon={<FaEye />}
+          />
         </div>
       </div>
     </section>

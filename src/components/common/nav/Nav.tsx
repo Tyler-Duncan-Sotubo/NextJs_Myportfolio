@@ -1,21 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { IoSettingsOutline } from "react-icons/io5";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface NavData {
   name: string;
   path: string;
 }
 
-const themeSliderVariant = {
-  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-  hidden: { opacity: 0, x: 100 },
-};
-
 const navData: NavData[] = [
   { name: "about", path: "/" },
   { name: "projects", path: "/#projects" },
-  { name: "blog", path: "/" },
+  { name: "Skills", path: "/" },
   { name: "contact", path: "/" },
 ];
 
@@ -23,8 +18,6 @@ const Nav = () => {
   const [color, setColor] = useState<boolean>(false);
   const [activeIndex, setActiveIndex] = useState();
   const [toggle, setToggle] = useState<boolean>(false);
-
-  const control = useAnimation();
 
   const changeNavBarColor = () => {
     if (window.scrollY >= 90) {
@@ -41,27 +34,27 @@ const Nav = () => {
   return (
     <>
       <nav
-        className={`flex justify-between  mb-6 md:px-20 px-6 pt-8 md:text-sm text-primary font-medium sticky top-0 ${
-          color ? "bg-primary py-6 z-50 duration-300" : ""
+        className={`flex justify-between  mb-6 md:px-20 px-6 pt-8 md:text-sm text-skin-primary font-medium sticky top-0 ${
+          color ? " bg-skin-primary py-6 z-50 duration-300" : ""
         }`}>
         <p
-          className={`text-primary text-xs md:text-sm ${
-            color ? "text-background" : ""
+          className={`text-skin-primary text-xs md:text-sm ${
+            color ? "text-skin-background" : ""
           }`}>
           Tyler Duncan Sotubo
         </p>
         <div className="flex gap-10">
           <ul
-            className={`hidden md:flex gap-14 capitalize cursor-pointer z-50 text-primary ${
-              color ? "text-background" : ""
+            className={`hidden md:flex gap-14 capitalize cursor-pointer z-50 text-skin-primary ${
+              color ? "text-skin-background" : ""
             }`}>
             {navData.map((item, index: any) => {
               return (
                 <li key={index}>
                   <p
                     onClick={() => setActiveIndex(index)}
-                    className={`hover:scale-125 duration-300 hover:text-accent ${
-                      activeIndex === index ? "text-accent scale-110" : ""
+                    className={`hover:scale-125 duration-300 hover:text-skin-accent ${
+                      activeIndex === index ? "text-skin-accent scale-110" : ""
                     }`}>
                     {item.name}
                   </p>
@@ -80,11 +73,11 @@ const Nav = () => {
             }}>
             <IoSettingsOutline
               size={25}
-              className="text-accent cursor-pointer"
+              className="text-skin-accent cursor-pointer"
             />
           </motion.div>
           <motion.div
-            className={` fixed top-16 px-10 py-14 z-50 duration-500 shadow-lg bg-white ${
+            className={` fixed top-20 px-10 py-14 z-50 duration-500 shadow-lg bg-skin-white ${
               toggle ? "right-0" : "right-[-200px]"
             }`}>
             <p>Hello</p>

@@ -6,7 +6,7 @@ type Props = {
 
 const SkillsButton: FC<Props> = ({ name }) => {
   return (
-    <button className=" bg-primary text-white px-2 py-1 rounded-lg text-xs">
+    <button className=" bg-skin-primary text-skin-light px-2 py-1 rounded-lg text-xs">
       {name}
     </button>
   );

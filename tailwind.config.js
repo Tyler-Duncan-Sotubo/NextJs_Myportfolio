@@ -7,18 +7,37 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      textColor: {
+        skin: {
+          primary: "var(--primary)",
+          secondary: "var(--secondary)",
+          accent: "var(--accent)",
+          light: "var(--text-light)",
+          dark: "var(--text-dark)",
+          background: "var(--background)",
+          herobackground: "var(--herobackground)",
+        },
+      },
+      backgroundColor: {
+        skin: {
+          primary: "var(--primary)",
+          accent: "var(--accent)",
+          background: "var(--background)",
+          herobackground: "var(--herobackground)",
+          light: "var(--text-light)",
+        },
+      },
+      borderColor: {
+        skin: {
+          primary: "var(--primary)",
+          accent: "var(--accent)",
+          secondary: "var(--secondary)",
+        },
+      },
+    },
     fontFamily: {
       Lato: ["Lato"],
-    },
-    colors: {
-      primary: "#47455A",
-      accent: "#D6532B",
-      secondary: "#D1D1D1",
-      white: "#FFFFFF",
-      black: "#000000",
-      background: "#F7F5FB",
-      heroBackground: "#EFF2F1",
     },
   },
   plugins: [],

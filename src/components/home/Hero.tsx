@@ -9,7 +9,6 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import circle from "@/assets/img/circle.png";
-import javascript from "@/assets/img/javascript-colored.svg";
 import react from "@/assets/img/react-colored.svg";
 import Image from "next/image";
 
@@ -29,7 +28,7 @@ const arrowTransition = {
 
 const Hero = () => {
   return (
-    <section className="text-primary py-20 bg-background">
+    <section className="text-skin-primary py-12 bg-skin-background">
       <div className="flex flex-col items-center relative justify-center mt-24">
         <motion.div
           animate={{ scale: 3 }}
@@ -46,7 +45,7 @@ const Hero = () => {
             <motion.li
               whileHover={{ y: -5 }}
               transition={{ duration: 0.3 }}
-              className="list-none text-accent md:text-4xl text-2xl cursor-pointer"
+              className="list-none text-skin-accent md:text-4xl text-2xl cursor-pointer"
               key={index}>
               {item.icon}
             </motion.li>
@@ -71,10 +70,15 @@ const Hero = () => {
             </motion.div>
             <p className="text-sm md:text-xl text-center">
               I love working with
-              <span className=" text-accent font-medium ml-1">React JS</span>,
-              <span className=" text-accent font-medium ml-1">Next JS</span> for
-              Better SEO and
-              <span className=" text-accent font-medium ml-1 mr-1">
+              <span className=" text-skin-accent font-medium ml-1">
+                React JS
+              </span>
+              ,
+              <span className=" text-skin-accent font-medium ml-1">
+                Next JS
+              </span>{" "}
+              for Better SEO and
+              <span className=" text-skin-accent font-medium ml-1 mr-1">
                 Tailwind
               </span>
               for CSS
@@ -82,13 +86,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-64 px-20 flex item-center gap-2">
+      <div className="mt-56 px-20 flex item-center justify-center gap-2">
         <motion.div
           animate={{ y: ["10px", "-10px", "10px"] }}
           transition={{ y: arrowTransition }}>
-          <FaArrowDown className="text-accent text-lg cursor-pointer" />
+          <FaArrowDown className="text-skin-accent text-3xl cursor-pointer" />
         </motion.div>
-        <p className=" text-sm">Scroll</p>
       </div>
     </section>
   );
