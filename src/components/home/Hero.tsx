@@ -8,8 +8,8 @@ import {
   FaArrowDown,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import circle from "@/assets/img/circle.png";
-import react from "@/assets/img/react-colored.svg";
+import circle from "/assets/img/circle.png";
+import react from "/assets/img/react-colored.svg";
 import Image from "next/image";
 
 const icons = [
@@ -34,7 +34,7 @@ const Hero = () => {
           animate={{ scale: 3 }}
           transition={{ scale: arrowTransition }}
           className="absolute top-16 right-[30%] w-2 h-2">
-          <Image src={circle} alt="" fill />
+          <Image src="/assets/img/circle.png" alt="" fill />
         </motion.div>
         <motion.div
           initial={{ y: -20 }}
@@ -66,7 +66,7 @@ const Hero = () => {
                 },
               }}
               className="relative md:w-4 md:h-4 w-8 h-8">
-              <Image src={react} alt="" fill />
+              <Image src="/assets/img/react-colored.svg" alt="" fill />
             </motion.div>
             <p className="text-sm md:text-xl text-center">
               I love working with
