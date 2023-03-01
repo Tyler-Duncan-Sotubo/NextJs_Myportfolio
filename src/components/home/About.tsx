@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import hand from "@/assets/img/hand.webp";
 import Image from "next/image";
 import Button from "../common/button";
 import { BsDownload } from "react-icons/bs";
@@ -45,7 +44,7 @@ const About = () => {
               repeatType: "reverse",
             }}
             className="relative w-8 h-8">
-            <Image src={hand} alt="" fill />
+            <Image src="/assets/img/hand.webp" alt="" fill />
           </motion.div>
         </div>
         <p className="text-xl   my-3">
