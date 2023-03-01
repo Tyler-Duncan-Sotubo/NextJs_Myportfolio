@@ -13,7 +13,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="flex flex-col gap-6 items-center justify-between px-20 mb-20 mt-40">
+    <footer className="flex flex-col md:flex-row gap-6 items-center justify-between px-20 mb-20 mt-40">
       <div className="flex gap-5 items-center">
         {icons.map((item, index) => (
           <motion.li
@@ -25,7 +25,7 @@ const Footer = (props: Props) => {
           </motion.li>
         ))}
       </div>
-      <p className="text-sm text-skin-primary">
+      <p className="text-sm text-skin-primary text-center">
         © designed & built by Tyler Duncan Sotubo
       </p>
     </footer>

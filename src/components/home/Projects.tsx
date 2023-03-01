@@ -25,7 +25,7 @@ const Projects = () => {
                 <div
                   key={index}
                   className="py-16 flex md:flex-row-reverse flex-col items-center gap-10 border-b-[.2px] border-skin-accent">
-                  <div className="relative w-full h-[330px] md:w-1/2 ">
+                  <div className="relative w-full h-[270px] md:h-[330px] md:w-1/2 ">
                     <Image src={item.img} alt="" fill />
                   </div>
                   <div className="w-full md:w-1/2 mt-7">
@@ -68,7 +68,7 @@ const Projects = () => {
                 <div
                   key={index}
                   className="py-16 flex flex-col md:flex-row items-center gap-10 border-b-[.2px] last:border-none border-skin-primary">
-                  <div className="relative h-[330px] md:w-1/2 w-full">
+                  <div className="relative w-full h-[270px] md:h-[330px] md:w-1/2 ">
                     <Image src={item.img} alt="" fill />
                   </div>
                   <div className="w-full md:w-1/2 mt-7">

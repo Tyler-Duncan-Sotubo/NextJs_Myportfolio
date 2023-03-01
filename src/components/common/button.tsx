@@ -14,7 +14,7 @@ const Button: FC<Props> = ({ name, color, icon }) => {
       initial={{ y: 5 }}
       whileHover={{ y: 0 }}
       transition={{ duration: 0.3 }}
-      className={`flex gap-2 items-center text-sm text-white px-8 py-4 rounded-full font-bold uppercase ${color}`}>
+      className={`flex gap-2 items-center md:text-sm text-xs text-white px-8 py-4 rounded-full font-bold uppercase ${color}`}>
       {icon}
       {name}
     </motion.button>

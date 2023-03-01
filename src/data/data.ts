@@ -1,16 +1,11 @@
-interface IProjects {
-  name: string;
-  img: string;
-  desc: string;
-  source: string;
-  web: string;
-  tech: any;
-}
+import { NavData, IProjects, ISkills } from "@/lib/interface";
 
-interface ISkills {
-  name: string;
-  img: string;
-}
+export const navData: NavData[] = [
+  { name: "about", path: "/" },
+  { name: "projects", path: "/#projects" },
+  { name: "Skills", path: "/" },
+  { name: "contact", path: "/" },
+];
 
 export const projectData: IProjects[] = [
   {
