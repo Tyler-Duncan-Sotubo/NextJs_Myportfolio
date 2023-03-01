@@ -8,14 +8,14 @@ const Skills = (props: Props) => {
   return (
     <div>
       <div className="py-16 mx-auto">
-        <h2 className="mb-2 text-xl text-center font-medium uppercase text-skin-accent">
-          <span className=" text-skin-primary">My </span> Skills
+        <h2 className="mb-2  text-xl text-center font-medium uppercase text-skin-accent">
+          <span className="text-skin-primary">My </span> Skills
         </h2>
-        <p className="text-3xl text-center text-primary font-bold w-2/5 mx-auto">
+        <p className="md:text-2xl text-center text-primary font-bold w-2/5 mx-auto">
           Expert in these Languages, Libraries, Frameworks & Tools
         </p>
       </div>
-      <div className="grid grid-cols-6 px-52 mb-28 gap-16">
+      <div className="grid md:grid-cols-6 grid-cols-2 md:px-52 px-10 mb-28 md:gap-16 gap-8">
         {toolsData.map((item, index) => (
           <div
             key={index}

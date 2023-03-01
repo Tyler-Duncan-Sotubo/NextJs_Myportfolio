@@ -30,9 +30,9 @@ const About = () => {
         variants={aboutVariant}
         initial="hidden"
         animate={control}
-        className="py-20 max-w-screen-lg px-16 mx-auto flex flex-col items-start">
+        className="py-20 max-w-screen-lg md:px-16 px-10 mx-auto flex flex-col items-start">
         <div className="flex items-center gap-3">
-          <h2 className="text-4xl my-3 text-skin-primary">
+          <h2 className="md:text-4xl text-2xl font-semibold my-3 text-skin-primary">
             Hello, I&apos;m Tyler Duncan Sotubo
           </h2>
           <motion.div
@@ -43,7 +43,7 @@ const About = () => {
               duration: 1,
               repeatType: "reverse",
             }}
-            className="relative w-8 h-8">
+            className="relative w-8 h-8 hidden md:block">
             <Image src="/assets/img/hand.webp" alt="" fill />
           </motion.div>
         </div>

@@ -8,6 +8,8 @@ import {
   FaArrowDown,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import circle from "@/assets/img/circle.png";
+import react from "@/assets/img/react-colored.svg";
 import Image from "next/image";
 
 const icons = [
@@ -27,7 +29,7 @@ const arrowTransition = {
 const Hero = () => {
   return (
     <section className="text-skin-primary py-12 bg-skin-background">
-      <div className="flex flex-col items-center relative justify-center mt-24">
+      <div className="flex flex-col items-center relative justify-center mt-36 md:32 px-3 md:px-0">
         <motion.div
           animate={{ scale: 3 }}
           transition={{ scale: arrowTransition }}
@@ -63,10 +65,10 @@ const Hero = () => {
                   repeat: Infinity,
                 },
               }}
-              className="relative md:w-4 md:h-4 w-8 h-8">
+              className="relative md:w-4 md:h-4 w-8 h-8 hidden md:block ">
               <Image src="/assets/img/react-colored.svg" alt="" fill />
             </motion.div>
-            <p className="text-sm md:text-xl text-center">
+            <p className="text-xs md:text-xl text-center">
               I love working with
               <span className=" text-skin-accent font-medium ml-1">
                 React JS

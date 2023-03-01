@@ -34,8 +34,10 @@ const Nav = () => {
   return (
     <>
       <nav
-        className={`flex justify-between  mb-6 md:px-20 px-6 pt-8 md:text-sm text-skin-primary font-medium sticky top-0 ${
-          color ? " bg-skin-primary py-6 z-50 duration-300" : ""
+        className={`flex justify-between md:px-20 px-6 py-8 md:text-sm text-skin-primary font-medium sticky top-0  ${
+          color
+            ? " bg-skin-primary py-6 z-40 duration-300"
+            : "bg-skin-background"
         }`}>
         <p
           className={`text-skin-primary text-xs md:text-sm ${
