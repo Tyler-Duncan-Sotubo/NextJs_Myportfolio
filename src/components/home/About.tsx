@@ -47,7 +47,7 @@ const About = () => {
             <Image src="/assets/img/hand.webp" alt="" fill />
           </motion.div>
         </div>
-        <p className="text-xl   my-3">
+        <p className="text-xl text-skin-primary my-3">
           A software developer based in London. I develop full-blown web
           applications using the MERN Stack, but I mostly work on the front-end
           using React, Typescript, Tailwind CSS and Next JS

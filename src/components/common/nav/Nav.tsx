@@ -76,7 +76,7 @@ const Nav = () => {
               className="text-skin-accent cursor-pointer"
             />
           </motion.div>
-          <motion.div
+          {/* <motion.div
             className={` fixed top-20 px-10 py-14 z-50 duration-500 shadow-lg bg-skin-white ${
               toggle ? "right-0" : "right-[-200px]"
             }`}>
@@ -84,7 +84,7 @@ const Nav = () => {
             <p>Hello</p>
             <p>Hello</p>
             <p>Hello</p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </nav>
     </>

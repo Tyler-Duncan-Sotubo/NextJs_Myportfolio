@@ -1,20 +1,3 @@
-import croydon from "/assets/img/projects/croydon1.png";
-import plug from "/assets/img/projects/plug.png";
-import app from "/assets/img/projects/MusicApp.png";
-import { StaticImageData } from "next/image";
-import css from "/assets/img/skills/css3.svg";
-import express from "/assets/img/skills/express.svg";
-import html from "/assets/img/skills/html5.svg";
-import javascript from "/assets/img/skills/javascript.svg";
-import typescript from "/assets/img/skills/typescript.svg";
-import mongo from "/assets/img/skills/mongodb.svg";
-import next from "/assets/img/skills/nextjs.svg";
-import react from "/assets/img/skills/react.svg";
-import redux from "/assets/img/skills/redux.svg";
-import tailwind from "/assets/img/skills/tailwind.svg";
-import nodejs from "/assets/img/skills/nodejs.svg";
-import jest from "/assets/img/skills/jest.svg";
-
 interface IProjects {
   name: string;
   img: string;
@@ -33,7 +16,7 @@ export const projectData: IProjects[] = [
   {
     name: "Croydon Ecommerce",
     img: "/assets/img/projects/croydon1.png",
-    desc: "I built this project for a client after attending her yoga class. She wanted a WordPress site with a more custom layout so I used an existing WordPress theme and tweaked it with about 500 lines of additional CSS.",
+    desc: "This is a complete and functional ecommerce website, built using the MERN Stack, The goal was to develop a full functional e-commerce website with both client and admin dashboard for easy product upload, update as well as managing users and orders ",
     source: "https://github.com/Tyler-Wiz/nextjs_e-commerce",
     web: "https://github.com/Tyler-Wiz/nextjs_e-commerce",
     tech: [
@@ -50,7 +33,7 @@ export const projectData: IProjects[] = [
   {
     name: "Plug Lyrics App",
     img: "/assets/img/projects/plug.png",
-    desc: "I built this project for a client after attending her yoga class. She wanted a WordPress site with a more custom layout so I used an existing WordPress theme and tweaked it with about 500 lines of additional CSS.",
+    desc: "This is a complete and functional lyrics website, built using the MERN Stack, The goal was to develop a full functional web with both client and admin dashboard for easy lyrics upload, update as well as managing admin users",
     source: "https://github.com/Tyler-Wiz/Lyrics-App",
     web: "https://plug.tooxclusive.com/",
     tech: [
@@ -66,7 +49,7 @@ export const projectData: IProjects[] = [
   {
     name: "Music App",
     img: "/assets/img/projects/MusicApp.png",
-    desc: "I built this project for a client after attending her yoga class. She wanted a WordPress site with a more custom layout so I used an existing WordPress theme and tweaked it with about 500 lines of additional CSS.",
+    desc: "Initially built with Expo CLI, then upgraded to the react native CLI, the music app was built with best pratices in mind and the most recent way to work with firebase firestore v9",
     source: "https://github.com/Tyler-Wiz/Music-App-Version-4",
     web: "https://play.google.com/store/apps/details?id=com.tylerappdev.tooXclusive",
     tech: [
