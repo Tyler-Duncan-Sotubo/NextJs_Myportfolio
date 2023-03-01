@@ -8,8 +8,6 @@ import {
   FaArrowDown,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import circle from "/assets/img/circle.png";
-import react from "/assets/img/react-colored.svg";
 import Image from "next/image";
 
 const icons = [
