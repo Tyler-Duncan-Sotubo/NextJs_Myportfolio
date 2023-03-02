@@ -11,7 +11,7 @@ const aboutVariant = {
   hidden: { opacity: 0, y: 100 },
 };
 
-const About = () => {
+export const About = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -77,5 +77,3 @@ const About = () => {
     </section>
   );
 };
-
-export default About;

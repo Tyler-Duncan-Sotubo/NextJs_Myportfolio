@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import { IoSettingsOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { navData } from "@/data/data";
-import { FaHamburger } from "react-icons/fa";
 
-const Nav = () => {
+export const Nav = () => {
   const [color, setColor] = useState<boolean>(false);
   const [activeIndex, setActiveIndex] = useState();
   const [toggle, setToggle] = useState<boolean>(false);
@@ -113,5 +112,3 @@ const Nav = () => {
     </>
   );
 };
-
-export default Nav;

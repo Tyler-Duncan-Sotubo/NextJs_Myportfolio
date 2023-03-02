@@ -11,7 +11,7 @@ const icons = [
 
 type Props = {};
 
-const Footer = (props: Props) => {
+export const Footer = (props: Props) => {
   return (
     <footer className="flex flex-col md:flex-row gap-6 items-center justify-between px-20 mb-20 mt-40">
       <div className="flex gap-5 items-center">
@@ -31,5 +31,3 @@ const Footer = (props: Props) => {
     </footer>
   );
 };
-
-export default Footer;

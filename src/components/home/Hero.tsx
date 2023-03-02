@@ -26,7 +26,7 @@ const arrowTransition = {
   ease: "easeInOut",
 };
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <section className="text-skin-primary py-12 bg-skin-background">
       <div className="flex flex-col items-center relative justify-center mt-36 md:32 px-3 md:px-0">
@@ -96,5 +96,3 @@ const Hero = () => {
     </section>
   );
 };
-
-export default Hero;

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 type Props = {
   name: string;
   color: string;
-  icon: ReactElement;
+  icon: ReactElement | string;
 };
 
 const Button: FC<Props> = ({ name, color, icon }) => {

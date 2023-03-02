@@ -1,23 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { projectData } from "@/data/data";
 import Image from "next/image";
 import SkillsButton from "../common/SkillsButton";
 import Link from "next/link";
 import { FaEye, FaGithub, FaLink } from "react-icons/fa";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import Button from "../common/button";
+import { Header } from "../common/header";
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <section id="projects" className=" bg-skin-background">
       <div className="max-w-screen-xl py-10 mx-auto px-10 md:px-0">
-        <h2 className="mb-2 md:text-2xl text-center font-medium uppercase text-skin-accent">
-          <span className=" text-primary">My </span> Projects
-        </h2>
-        <p className="md:text-3xl text-center text-skin-primary font-bold w-2/5 mx-auto">
-          Take a look some of my featured projects
-        </p>
+        <Header
+          name="My Projects"
+          description="Take a look some of my featured projects"
+        />
         <div className="mt-10">
           {projectData.map((item, index) => {
             if (index === 1) {
@@ -120,5 +117,3 @@ const Projects = () => {
     </section>
   );
 };
-
-export default Projects;

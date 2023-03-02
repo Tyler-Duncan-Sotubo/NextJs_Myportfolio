@@ -1,19 +1,16 @@
 import { toolsData } from "@/data/data";
 import Image from "next/image";
 import React from "react";
+import { Header } from "../common/header";
 
-type Props = {};
-
-const Skills = (props: Props) => {
+export const Skills = () => {
   return (
     <div>
       <div className="py-16 mx-auto">
-        <h2 className="mb-2  text-xl text-center font-medium uppercase text-skin-accent">
-          <span className="text-skin-primary">My </span> Skills
-        </h2>
-        <p className="md:text-2xl text-center text-primary font-bold w-2/5 mx-auto">
-          Expert in these Languages, Libraries, Frameworks & Tools
-        </p>
+        <Header
+          name="My Skills"
+          description="Expert in these Languages, Libraries, Frameworks & Tools"
+        />
       </div>
       <div className="grid md:grid-cols-6 grid-cols-2 md:px-52 px-10 mb-28 md:gap-16 gap-8">
         {toolsData.map((item, index) => (
@@ -35,5 +32,3 @@ const Skills = (props: Props) => {
     </div>
   );
 };
-
-export default Skills;
