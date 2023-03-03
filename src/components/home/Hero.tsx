@@ -11,12 +11,16 @@ import { motion } from "framer-motion";
 import circle from "@/assets/img/circle.png";
 import react from "@/assets/img/react-colored.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const icons = [
-  { icon: <FaGithub /> },
-  { icon: <FaLinkedin /> },
-  { icon: <FaCodepen /> },
-  { icon: <FaTwitter /> },
+  { icon: <FaGithub />, path: "https://github.com/Tyler-Wiz" },
+  {
+    icon: <FaLinkedin />,
+    path: "https://www.linkedin.com/in/tyler-duncan-sotubo-b2372724a/",
+  },
+  { icon: <FaCodepen />, path: "https://codepen.io/tyler-wiz" },
+  { icon: <FaTwitter />, path: "/" },
 ];
 
 const arrowTransition = {
@@ -42,13 +46,14 @@ export const Hero = () => {
           transition={{ duration: 1 }}
           className="flex gap-10">
           {icons.map((item, index) => (
-            <motion.li
-              whileHover={{ y: -5 }}
-              transition={{ duration: 0.3 }}
-              className="list-none text-skin-accent md:text-4xl text-2xl cursor-pointer"
-              key={index}>
-              {item.icon}
-            </motion.li>
+            <Link href={item.path} key={index} target="_blank">
+              <motion.li
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.3 }}
+                className="list-none text-skin-accent md:text-4xl text-2xl cursor-pointer">
+                {item.icon}
+              </motion.li>
+            </Link>
           ))}
         </motion.div>
         <div className="mt-12 max-w-screen-lg">
@@ -86,7 +91,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="mt-56 px-20 flex item-center justify-center gap-2">
+      <div className="mt-56 px-20 flex item-center justify-center gap-2 2xl:hidden">
         <motion.div
           animate={{ y: ["10px", "-10px", "10px"] }}
           transition={{ y: arrowTransition }}>

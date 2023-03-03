@@ -6,7 +6,7 @@ import { Header } from "../common/header";
 export const Skills = () => {
   return (
     <div>
-      <div className="py-16 mx-auto">
+      <div className="py-28 mx-auto" id="skills">
         <Header
           name="My Skills"
           description="Expert in these Languages, Libraries, Frameworks & Tools"

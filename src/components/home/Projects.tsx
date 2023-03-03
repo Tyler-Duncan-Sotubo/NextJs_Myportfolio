@@ -9,7 +9,7 @@ import { Header } from "../common/header";
 
 export const Projects = () => {
   return (
-    <section id="projects" className=" bg-skin-background">
+    <section id="projects" className="py-20 bg-skin-background">
       <div className="max-w-screen-xl py-10 mx-auto px-10 md:px-0">
         <Header
           name="My Projects"
