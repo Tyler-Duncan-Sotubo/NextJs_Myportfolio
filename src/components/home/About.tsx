@@ -61,7 +61,7 @@ export const About = () => {
           the cross platform libary React Native and i currentl have 3 active
           apps on playstore for my previous company
         </p>
-        <div className="my-10 flex gap-4">
+        <div className="my-10 flex flex-col md:flex-row gap-4">
           <Button
             name="More About Me"
             color="bg-skin-accent"

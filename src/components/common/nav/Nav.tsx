@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { IoSettingsOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { navData } from "@/data/data";
+import Link from "next/link";
 
 export const Nav = () => {
   const [color, setColor] = useState<boolean>(false);
@@ -29,12 +30,15 @@ export const Nav = () => {
             ? " bg-skin-primary py-6 z-40 duration-300"
             : "bg-skin-background"
         }`}>
-        <p
-          className={`text-skin-primary text-md md:text-sm ${
-            color ? "text-skin-background" : ""
-          }`}>
-          Tyler Duncan Sotubo
-        </p>
+        <Link href="/">
+          <p
+            className={`text-skin-primary text-md md:text-sm ${
+              color ? "text-skin-background" : ""
+            }`}>
+            Tyler Duncan Sotubo
+          </p>
+        </Link>
+
         <div className="flex md:gap-10 gap-6 items-center">
           <ul
             className={`hidden md:flex gap-14 capitalize cursor-pointer z-50 text-skin-primary ${
@@ -42,15 +46,20 @@ export const Nav = () => {
             }`}>
             {navData.map((item, index: any) => {
               return (
-                <li key={index}>
-                  <p
-                    onClick={() => setActiveIndex(index)}
-                    className={`hover:scale-125 duration-300 hover:text-skin-accent ${
-                      activeIndex === index ? "text-skin-accent scale-110" : ""
-                    }`}>
-                    {item.name}
-                  </p>
-                </li>
+                <Link href={item.path} key={index}>
+                  <li>
+                    <p
+                      onClick={() => setActiveIndex(index)}
+                      data-testid="desktop nav"
+                      className={`hover:scale-125 duration-300 hover:text-skin-accent ${
+                        activeIndex === index
+                          ? "text-skin-accent scale-110"
+                          : ""
+                      }`}>
+                      {item.name}
+                    </p>
+                  </li>
+                </Link>
               );
             })}
           </ul>
