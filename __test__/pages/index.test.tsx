@@ -28,22 +28,45 @@ jest.mock("@/components/home/Skills", () => ({
   Skills: () => <main data-testid="Skills">Skills</main>,
 }));
 
-describe("ChildComponent component", () => {
-  it("should be in the document", () => {
+describe("Home Components", () => {
+  it("should show Navbar", () => {
     mockAllIsIntersecting(true);
     render(<Home />);
     const navComponent = screen.getByTestId("Nav");
-    const heroComponent = screen.getByTestId("Hero");
-    const aboutComponent = screen.getByTestId("About");
-    const projectsComponent = screen.getByTestId("Projects");
-    const skillsComponent = screen.getByTestId("Skills");
-    const footerComponent = screen.getByTestId("Footer");
-
     expect(navComponent).toBeInTheDocument();
+  });
+  it("should show Hero Component", () => {
+    mockAllIsIntersecting(true);
+    render(<Home />);
+    const heroComponent = screen.getByTestId("Hero");
     expect(heroComponent).toBeInTheDocument();
+  });
+
+  it("should show About Component", () => {
+    mockAllIsIntersecting(true);
+    render(<Home />);
+    const aboutComponent = screen.getByTestId("About");
     expect(aboutComponent).toBeInTheDocument();
+  });
+
+  it("should show Project Component", () => {
+    mockAllIsIntersecting(true);
+    render(<Home />);
+    const projectsComponent = screen.getByTestId("Projects");
     expect(projectsComponent).toBeInTheDocument();
+  });
+
+  it("should show Skills Component", () => {
+    mockAllIsIntersecting(true);
+    render(<Home />);
+    const skillsComponent = screen.getByTestId("Skills");
     expect(skillsComponent).toBeInTheDocument();
+  });
+
+  it("should show Footer Component", () => {
+    mockAllIsIntersecting(true);
+    render(<Home />);
+    const footerComponent = screen.getByTestId("Footer");
     expect(footerComponent).toBeInTheDocument();
   });
 });

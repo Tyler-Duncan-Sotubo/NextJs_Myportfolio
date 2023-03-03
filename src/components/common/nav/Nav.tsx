@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useEffect, useState } from "react";
 import { IoSettingsOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { navData } from "@/data/data";
+import { Link } from "react-scroll/modules";
 
 export const Nav = () => {
   const [color, setColor] = useState<boolean>(false);
@@ -29,12 +31,14 @@ export const Nav = () => {
             ? " bg-skin-primary py-6 z-40 duration-300"
             : "bg-skin-background"
         }`}>
-        <p
-          className={`text-skin-primary text-md md:text-sm ${
-            color ? "text-skin-background" : ""
-          }`}>
-          Tyler Duncan Sotubo
-        </p>
+        <a href="/">
+          <p
+            className={`text-skin-primary text-md md:text-sm ${
+              color ? "text-skin-background" : ""
+            }`}>
+            Tyler Duncan Sotubo
+          </p>
+        </a>
         <div className="flex md:gap-10 gap-6 items-center">
           <ul
             className={`hidden md:flex gap-14 capitalize cursor-pointer z-50 text-skin-primary ${
@@ -42,15 +46,29 @@ export const Nav = () => {
             }`}>
             {navData.map((item, index: any) => {
               return (
-                <li key={index}>
-                  <p
-                    onClick={() => setActiveIndex(index)}
-                    className={`hover:scale-125 duration-300 hover:text-skin-accent ${
-                      activeIndex === index ? "text-skin-accent scale-110" : ""
-                    }`}>
-                    {item.name}
-                  </p>
-                </li>
+                <Link
+                  key={index}
+                  activeClass="active"
+                  to={item.path}
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}>
+                  <li>
+                    <p
+                      onClick={() => {
+                        setActiveIndex(index);
+                      }}
+                      data-testid="desktop nav"
+                      className={`hover:scale-125 duration-300 hover:text-skin-accent ${
+                        activeIndex === index
+                          ? "text-skin-accent scale-105"
+                          : ""
+                      }`}>
+                      {item.name}
+                    </p>
+                  </li>
+                </Link>
               );
             })}
           </ul>
@@ -97,15 +115,25 @@ export const Nav = () => {
         }`}>
         {navData.map((item, index: any) => {
           return (
-            <li key={index} className="mt-5 text-center uppercase font-bold">
-              <p
-                onClick={() => setActiveIndex(index)}
-                className={`duration-300 hover:text-skin-accent ${
-                  activeIndex === index ? "text-skin-accent" : ""
-                }`}>
-                {item.name}
-              </p>
-            </li>
+            <Link
+              key={index}
+              activeClass="active"
+              to={item.path}
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+              onClick={() => setIsOpen(false)}>
+              <li className="mt-5 text-center uppercase font-bold">
+                <p
+                  onClick={() => setActiveIndex(index)}
+                  className={`duration-300 hover:text-skin-accent ${
+                    activeIndex === index ? "text-skin-accent" : ""
+                  }`}>
+                  {item.name}
+                </p>
+              </li>
+            </Link>
           );
         })}
       </ul>

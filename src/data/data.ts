@@ -1,9 +1,9 @@
 import { NavData, IProjects, ISkills } from "@/lib/interface";
 
 export const navData: NavData[] = [
-  { name: "about", path: "/" },
-  { name: "projects", path: "/#projects" },
-  { name: "Skills", path: "/" },
+  { name: "about", path: "about" },
+  { name: "projects", path: "projects" },
+  { name: "Skills", path: "skills" },
   { name: "contact", path: "/" },
 ];
 
