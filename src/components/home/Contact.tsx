@@ -5,9 +5,8 @@ import { toast } from "react-toastify";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Header } from "../common/header";
 import Button from "../common/button";
-import { BsDownload } from "react-icons/bs";
-import { FaMailBulk } from "react-icons/fa";
-import { IoLocation, IoMailOutline } from "react-icons/io5";
+import { IoLocation, IoMailOutline, IoSend } from "react-icons/io5";
+import { FiSend } from "react-icons/fi";
 
 interface IFormInput {
   name: String;
@@ -26,7 +25,7 @@ export const Contact = () => {
     formState: { errors },
   } = useForm<IFormInput>();
 
-  const onSubmit: SubmitHandler<IFormInput> = (data: any) => {
+  const onSubmit: SubmitHandler<IFormInput> = (data: any, e: any) => {
     emailjs
       .send("service_hsvsftt", "template_brr0qvb", data, "CyMbXRk8pnr8YsgLJ")
       .then(
@@ -60,9 +59,10 @@ export const Contact = () => {
           </div>
         </div>
         <form
+          data-testid="form"
           onSubmit={handleSubmit(onSubmit)}
           className="font-Lato md:w-2/3 w-full px-10">
-          <p className=" text-xl font-semibold my-3">Write me a message 👇</p>
+          <p className=" text-xl font-semibold my-3">Write me a message👇</p>
           <div className="flex flex-col">
             <label>Name</label>
             <input
@@ -99,7 +99,7 @@ export const Contact = () => {
             <Button
               name="Send Message"
               color="bg-skin-accent"
-              icon={<BsDownload size={24} />}
+              icon={<FiSend size={24} />}
             />
           </div>
         </form>
