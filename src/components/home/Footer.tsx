@@ -17,7 +17,7 @@ type Props = {};
 
 export const Footer = (props: Props) => {
   return (
-    <footer className="flex flex-col md:flex-row gap-6 items-center justify-between px-20 mb-20 mt-40">
+    <footer className="flex flex-col md:flex-row gap-6 items-center justify-between px-20 mb-20 mt-28">
       <div className="flex gap-5 items-center">
         {icons.map((item, index) => (
           <Link href={item.path} key={index} target="_blank">

@@ -52,7 +52,7 @@ export const Nav = () => {
                   to={item.path}
                   spy={true}
                   smooth={true}
-                  offset={10}
+                  offset={20}
                   duration={500}>
                   <li>
                     <p
