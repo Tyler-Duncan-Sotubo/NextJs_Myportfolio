@@ -38,6 +38,7 @@ export const Contact = () => {
           console.log(error.text);
         }
       );
+    e.target.reset();
   };
 
   return (
