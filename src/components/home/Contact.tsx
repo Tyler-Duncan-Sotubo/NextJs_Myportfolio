@@ -1,17 +1,38 @@
-import React, { useRef } from "react";
+/* eslint-disable @next/next/no-img-element */
+import React from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { Header } from "../common/header";
+import Button from "../common/button";
+import { IoLocation, IoMailOutline, IoSend } from "react-icons/io5";
+import { FiSend } from "react-icons/fi";
 
-export const ContactUs = () => {
-  const form = useRef();
+interface IFormInput {
+  name: String;
+  email: String;
+  message: String;
+}
 
-  const sendEmail = (e: any) => {
-    e.preventDefault();
+const inputStyle =
+  "bg-gray-100 px-4 py-2 w-full rounded-lg outline-orange-300 my-2 placeholder:capitalize font-semibold";
+const errorStyle = "text-red-700 my-1 text-sm capitalize";
 
+export const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<IFormInput>();
+
+  const onSubmit: SubmitHandler<IFormInput> = (data: any, e: any) => {
     emailjs
-      .sendForm("service_4hkg3gu", "template_brr0qvb", "CyMbXRk8pnr8YsgLJ")
+      .send("service_hsvsftt", "template_brr0qvb", data, "CyMbXRk8pnr8YsgLJ")
       .then(
         (result) => {
-          console.log(result.text);
+          if (result.text === "OK") {
+            toast.success("Message sent");
+          }
         },
         (error) => {
           console.log(error.text);
@@ -20,14 +41,69 @@ export const ContactUs = () => {
   };
 
   return (
-    <form onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <section className="max-w-screen-lg mx-auto mt-32" id="contact">
+      <Header name="Contact Me" description="Lets Talk Ideas" />
+      <div className="md:flex flex md:flex-row flex-col items-center md:gap-10 gap-1 mt-20">
+        <div className="md:w-1/3 mb-24 px-5 ">
+          <p className="text-lg">
+            I&apos;d love if you reached out to me. Tell me a little bit about
+            your project, drop me a line and I’ll get back to you ASAP!
+          </p>
+          <div className="flex gap-2 items-center mt-10">
+            <IoMailOutline size={30} className="text-skin-accent" />
+            <p className="text-lg">tylertooxclusive@gmail.com</p>
+          </div>
+          <div className="flex gap-2 items-center my-3">
+            <IoLocation size={30} className="text-skin-accent" />
+            <p className="text-lg">London, UK</p>
+          </div>
+        </div>
+        <form
+          data-testid="form"
+          onSubmit={handleSubmit(onSubmit)}
+          className="font-Lato md:w-2/3 w-full px-10">
+          <p className=" text-xl font-semibold my-3">Write me a message👇</p>
+          <div className="flex flex-col">
+            <label>Name</label>
+            <input
+              placeholder="name"
+              {...register("name", { required: true })}
+              className={`${inputStyle}`}
+            />
+            {errors.name && (
+              <span className={`${errorStyle}`}>Your name is required</span>
+            )}
+          </div>
+          <div className="flex flex-col">
+            <label>Email</label>
+            <input
+              placeholder="email"
+              {...register("email", { required: true })}
+              className={`${inputStyle}`}
+            />
+            {errors.email && (
+              <span className={`${errorStyle}`}>Your email is required</span>
+            )}
+          </div>
+          <div className="flex flex-col">
+            <label>Your Message</label>
+            <textarea
+              placeholder="message"
+              {...register("message", { required: true })}
+              className={`${inputStyle} h-44`}></textarea>
+            {errors.message && (
+              <span className={`${errorStyle}`}>Please leave a message</span>
+            )}
+          </div>
+          <div className="my-4 flex justify-end">
+            <Button
+              name="Send Message"
+              color="bg-skin-accent"
+              icon={<FiSend size={24} />}
+            />
+          </div>
+        </form>
+      </div>
+    </section>
   );
 };

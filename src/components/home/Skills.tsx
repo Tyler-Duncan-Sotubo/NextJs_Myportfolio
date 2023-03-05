@@ -6,13 +6,13 @@ import { Header } from "../common/header";
 export const Skills = () => {
   return (
     <div>
-      <div className="py-28 mx-auto" id="skills">
+      <div className="pt-28 mx-auto" id="skills">
         <Header
           name="My Skills"
           description="Expert in these Languages, Libraries, Frameworks & Tools"
         />
       </div>
-      <div className="grid md:grid-cols-6 grid-cols-2 md:px-52 px-10 mb-28 md:gap-16 gap-8">
+      <div className="grid md:grid-cols-6 grid-cols-2 md:px-52 px-10 md:gap-16 gap-8">
         {toolsData.map((item, index) => (
           <div
             key={index}

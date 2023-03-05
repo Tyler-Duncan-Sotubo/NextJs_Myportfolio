@@ -4,7 +4,7 @@ export const navData: NavData[] = [
   { name: "about", path: "about" },
   { name: "projects", path: "projects" },
   { name: "Skills", path: "skills" },
-  { name: "contact", path: "/" },
+  { name: "contact", path: "contact" },
 ];
 
 export const projectData: IProjects[] = [

@@ -11,6 +11,7 @@ type Props = {
 const Button: FC<Props> = ({ name, color, icon }) => {
   return (
     <motion.button
+      data-testid="buttonComponent"
       initial={{ y: 5 }}
       whileHover={{ y: 0 }}
       transition={{ duration: 0.3 }}
