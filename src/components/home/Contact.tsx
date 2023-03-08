@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Header } from "../common/header";
 import Button from "../common/button";
-import { IoLocation, IoMailOutline, IoSend } from "react-icons/io5";
+import { IoLocation, IoMailOutline } from "react-icons/io5";
 import { FiSend } from "react-icons/fi";
 
 interface IFormInput {
@@ -38,6 +38,7 @@ export const Contact = () => {
           console.log(error.text);
         }
       );
+    e.target.reset();
   };
 
   return (
