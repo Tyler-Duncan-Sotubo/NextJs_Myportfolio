@@ -31,7 +31,7 @@ export const About = () => {
         animate={control}
         className="pt-24 w-[90%] mx-auto lg:w-[60%]">
         <div className="flex items-center gap-3">
-          <h2 className="md:text-4xl text-2xl font-semibold my-3 text-skin-primary dark:text-skin-light">
+          <h2 className="md:text-4xl text-2xl font-semibold my-3 text-skin-primary">
             Hello, I&apos;m Tyler Duncan Sotubo
           </h2>
           <motion.div
