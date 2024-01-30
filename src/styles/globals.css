@@ -24,14 +24,4 @@
     --background: #1f2833;
     --herobackground: rgb(239, 242, 241);
   }
-
-  .theme-pink {
-    --primary: rgb(71, 69, 90);
-    --secondary: rgb(209, 209, 209);
-    --accent: rgb(214 83 43);
-    --text-light: rgb(255, 255, 255);
-    --text-dark: rgb(0, 0, 0);
-    --background: rgb(247, 245, 251);
-    --herobackground: rgb(239, 242, 241);
-  }
 }

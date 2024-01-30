@@ -4,15 +4,12 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Button from "../common/button";
 import { BsDownload } from "react-icons/bs";
-import { MdOutlineReadMore } from "react-icons/md";
-import { useRouter } from "next/router";
 import Link from "next/link";
 
 const aboutVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   hidden: { opacity: 0, y: 100 },
 };
-
 export const About = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
@@ -32,9 +29,9 @@ export const About = () => {
         variants={aboutVariant}
         initial="hidden"
         animate={control}
-        className="pt-24 max-w-screen-lg md:px-16 px-10 mx-auto flex flex-col items-start">
+        className="pt-24 w-[90%] mx-auto lg:w-[60%]">
         <div className="flex items-center gap-3">
-          <h2 className="md:text-4xl text-2xl font-semibold my-3 text-skin-primary">
+          <h2 className="md:text-4xl text-2xl font-semibold my-3 text-skin-primary dark:text-skin-light">
             Hello, I&apos;m Tyler Duncan Sotubo
           </h2>
           <motion.div
@@ -51,20 +48,15 @@ export const About = () => {
         </div>
         <p className="text-2xl text-skin-primary my-3">
           A software developer based in London. I develop full-blown web
-          applications using the MERN Stack.
+          applications using the PERN & MERN Stack. I&apos;ve been building
+          websites since 2020 with a focus on responsive design, accessibility
+          and pleasing aesthetics.
         </p>
         <p className="text-2xl text-skin-primary my-3">
-          I mostly work on the front-end using React, Typescript, Tailwind CSS
-          and Next JS
-        </p>
-        <p className="text-2xl text-skin-primary my-3">
-          I&apos;ve been building websites since 2019 with a focus on responsive
-          design, accessibility and pleasing aesthetics.
-        </p>
-        <p className="text-2xl text-skin-primary my-3">
-          Over the Last 2 year i have tried out my hand in App Development using
-          the cross platform libary React Native and i currentl have 3 active
-          apps on playstore for my previous company
+          I have worked with a number of clients, ranging from small startups to
+          FMCG, creating websites and web applications. I have developed web
+          apps across multiple industries including e-commerce, education, and
+          finance.
         </p>
       </motion.div>
       <div className="py-16 flex justify-center items-center">

@@ -3,59 +3,85 @@ import { NavData, IProjects, ISkills } from "@/lib/interface";
 export const navData: NavData[] = [
   { name: "about", path: "about" },
   { name: "projects", path: "projects" },
-  { name: "Skills", path: "skills" },
   { name: "contact", path: "contact" },
 ];
 
 export const projectData: IProjects[] = [
   {
-    name: "Croydon Ecommerce",
-    img: "/assets/img/projects/croydon1.png",
-    desc: "This is a complete and functional ecommerce website, built using the MERN Stack, The goal was to develop a full functional e-commerce website with both client and admin dashboard for easy product upload, update as well as managing users and orders ",
-    source: "https://github.com/Tyler-Wiz/nextjs_e-commerce",
-    web: "https://github.com/Tyler-Wiz/nextjs_e-commerce",
-    tech: [
-      { name: "Typescript" },
-      { name: "Next Js" },
-      { name: "Redux Tool Kit" },
-      { name: "Mongo DB" },
-      { name: "Express JS" },
-      { name: "React Query" },
-      { name: "Tailwind CSS" },
-      { name: "S3 Bucket AWS" },
-    ],
-  },
-  {
-    name: "Plug Lyrics App",
+    name: "Lyrics Plug",
     img: "/assets/img/projects/plug.png",
-    desc: "This is a complete and functional lyrics website, built using the MERN Stack, The goal was to develop a full functional web with both client and admin dashboard for easy lyrics upload, update as well as managing admin users",
+    desc: `This is a lyrics website, built using the M.E.R.N Stack, 
+    Data is fetched from the backend API built using Express Js and MongoDB. 
+    Client and Admin side are built using Next Js and Redux Tool Kit for state management.
+    Admin can upload, edit and delete songs from the admin dashboard.
+    Songs are uploaded to Cloudinary and stored in a MongoDB database.`,
     source: "https://github.com/Tyler-Wiz/Lyrics-App",
-    web: "https://plug.tooxclusive.com/",
+    web: "/",
     tech: [
+      { name: "Express JS" },
+      { name: "Mongo DB" },
+      { name: "Cloudinary" },
       { name: "Typescript" },
       { name: "Next Js" },
       { name: "Redux Tool Kit" },
-      { name: "Mongo DB" },
-      { name: "Express JS" },
       { name: "Tailwind CSS" },
-      { name: "Cloudinary" },
     ],
   },
   {
-    name: "Music App",
-    img: "/assets/img/projects/MusicApp.png",
-    desc: "Initially built with Expo CLI, then upgraded to the react native CLI, the music app was built with best pratices in mind and the most recent way to work with firebase firestore v9",
-    source: "https://github.com/Tyler-Wiz/Music-App-Version-4",
-    web: "https://play.google.com/store/apps/details?id=com.tylerappdev.tooXclusive",
+    name: "Sportzy",
+    img: "/assets/img/projects/sportzy.png",
+    desc: `Full Stack Ecommerce website built using the P.E.R.N Stack,
+    the client side was built using Next Js and Redux Tool Kit for state management.
+    Data is fetched from the backend API built using Express Js and PostgreSQL, Product images are stored in an Amazon S3 Bucket,
+    Products are uploaded from the admin dashboard built using Next Js and Redux Tool Kit for state management.`,
+    source: "https://github.com/Tyler-Wiz/Full-Stack-Ecommerce",
+    web: "/",
     tech: [
-      { name: "JavaScript" },
-      { name: "React Native" },
-      { name: "Firebase" },
+      { name: "Javascript" },
+      { name: "Express JS" },
+      { name: "PostgreSQL" },
+      { name: "Amazon S3 Bucket" },
+      { name: "Next Js" },
+      { name: "Redux Tool Kit" },
+      { name: "Tailwind CSS" },
+    ],
+  },
+  {
+    name: "Smirnoff Party",
+    img: "/assets/img/projects/NoknownAddress.png",
+    desc: `Global Client Smirnoff's project for the Smirnoff "NoknownAddress" Party Campaign.  
+    The website was built using the P.E.R.N Stack.
+    The wesbite focus was to allow users to register for the party with email address and instagram handle.
+     The backend API was built using Express Js and PostgreSQL.
+     Registered users were stored in a PostgreSQL database and Welcome Email sent with NodeMailer`,
+    source: "https://github.com/Tyler-Wiz/Smirnoff-party",
+    web: "/",
+    tech: [
+      { name: "Javascript" },
+      { name: "Express JS" },
+      { name: "PostgreSQL" },
+      { name: "Next Js" },
+      { name: "Redux Tool Kit" },
+      { name: "Tailwind CSS" },
+    ],
+  },
+  {
+    name: "Artists Profile API",
+    img: "/assets/img/projects/artistApi.png",
+    desc: `This is an Open API built using Express Js and PostgreSQL. The project is till in progress.
+    The aim is to build an API that can be used by artists to create their profile and share their work.`,
+    source: "https://github.com/Tyler-Wiz/Artist-Profile-API",
+    web: "/",
+    tech: [
+      { name: "Javascript" },
+      { name: "Express JS" },
+      { name: "PostgreSQL" },
+      { name: "Swagger" },
     ],
   },
 ];
 
-export const toolsData: ISkills[] = [
+export const programmingSkills = [
   {
     name: "html",
     img: "/assets/img/skills/html5.svg",
@@ -72,39 +98,49 @@ export const toolsData: ISkills[] = [
     name: "typescript",
     img: "/assets/img/skills/typescript.svg",
   },
-  {
-    name: "react",
-    img: "/assets/img/skills/react.svg",
-  },
-  {
-    name: "tailwind",
-    img: "/assets/img/skills/tailwind.svg",
-  },
-  {
-    name: "express",
-    img: "/assets/img/skills/express.svg",
-  },
+];
 
-  {
-    name: "mongo",
-    img: "/assets/img/skills/mongodb.svg",
-  },
-  {
-    name: "next",
-    img: "/assets/img/skills/nextjs.svg",
-  },
-
-  {
-    name: "redux",
-    img: "/assets/img/skills/redux.svg",
-  },
-
+export const backendSkills = [
   {
     name: "nodejs",
     img: "/assets/img/skills/nodejs.svg",
   },
   {
+    name: "express",
+    img: "/assets/img/skills/express.svg",
+  },
+  {
+    name: "mongo",
+    img: "/assets/img/skills/mongodb.svg",
+  },
+  {
+    name: "postgreSQL",
+    img: "/assets/img/skills/postgre.png",
+  },
+];
+
+export const frontendSkills = [
+  {
+    name: "react",
+    img: "/assets/img/skills/react.svg",
+  },
+  {
+    name: "next",
+    img: "/assets/img/skills/nextjs.svg",
+  },
+  {
+    name: "redux",
+    img: "/assets/img/skills/redux.svg",
+  },
+];
+
+export const otherSkills = [
+  {
     name: "jest",
     img: "/assets/img/skills/jest.svg",
+  },
+  {
+    name: "tailwind",
+    img: "/assets/img/skills/tailwind.svg",
   },
 ];

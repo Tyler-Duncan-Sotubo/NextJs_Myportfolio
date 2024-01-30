@@ -31,7 +31,9 @@ export const Contact = () => {
       .then(
         (result) => {
           if (result.text === "OK") {
-            toast.success("Message sent");
+            toast.success("Message sent", {
+              position: toast.POSITION.BOTTOM_RIGHT,
+            });
           }
         },
         (error) => {
@@ -42,10 +44,10 @@ export const Contact = () => {
   };
 
   return (
-    <section className="max-w-screen-lg mx-auto mt-32" id="contact">
+    <section className="w-[90%] lg:w-[75%] mx-auto mt-16" id="contact">
       <Header name="Contact Me" description="Lets Talk Ideas" />
       <div className="md:flex flex md:flex-row flex-col items-center md:gap-10 gap-1 mt-20">
-        <div className="md:w-1/3 mb-24 px-5 ">
+        <div className="md:w-[55%] mb-8 w-full ">
           <p className="text-lg">
             I&apos;d love if you reached out to me. Tell me a little bit about
             your project, drop me a line and I’ll get back to you ASAP!
@@ -62,7 +64,7 @@ export const Contact = () => {
         <form
           data-testid="form"
           onSubmit={handleSubmit(onSubmit)}
-          className="font-Lato md:w-2/3 w-full px-10">
+          className="font-Lato md:w-[45%] w-full">
           <p className=" text-xl font-semibold my-3">Write me a message👇</p>
           <div className="flex flex-col">
             <label>Name</label>

@@ -17,6 +17,8 @@ module.exports = {
           dark: "var(--text-dark)",
           background: "var(--background)",
           herobackground: "var(--herobackground)",
+          lightBlack: "#8A8A8A",
+          lightGrey: "#969BA033",
         },
       },
       backgroundColor: {

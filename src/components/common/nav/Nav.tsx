@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useEffect, useState } from "react";
-import { IoSettingsOutline } from "react-icons/io5";
-import { motion } from "framer-motion";
 import { navData } from "@/data/data";
 import { Link } from "react-scroll/modules";
 
@@ -84,29 +82,6 @@ export const Nav = () => {
                 isOpen ? " rotate-[45deg] bottom-[2px] " : ""
               } ${color && " bg-gray-200"}`}></div>
           </div>
-          <motion.div
-            onClick={() => setToggle(!toggle)}
-            whileHover={{ rotate: ["-360deg", "0deg"] }}
-            transition={{
-              rotate: {
-                duration: 1.8,
-                repeat: 1,
-              },
-            }}>
-            <IoSettingsOutline
-              size={25}
-              className="text-skin-accent cursor-pointer"
-            />
-          </motion.div>
-          {/* <motion.div
-            className={` fixed top-20 px-10 py-14 z-50 duration-500 shadow-lg bg-skin-white ${
-              toggle ? "right-0" : "right-[-200px]"
-            }`}>
-            <p>Hello</p>
-            <p>Hello</p>
-            <p>Hello</p>
-            <p>Hello</p>
-          </motion.div> */}
         </div>
       </nav>
       <ul

@@ -8,10 +8,9 @@ import {
   FaArrowDown,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import circle from "@/assets/img/circle.png";
-import react from "@/assets/img/react-colored.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { Skills } from "./Skills";
 
 const icons = [
   { icon: <FaGithub />, path: "https://github.com/Tyler-Wiz" },
@@ -32,8 +31,8 @@ const arrowTransition = {
 
 export const Hero = () => {
   return (
-    <section className="text-skin-primary py-12 bg-skin-background">
-      <div className="flex flex-col items-center relative justify-center mt-36 md:32 px-3 md:px-0">
+    <section className="text-skin-primary py-12 bg-skin-background 2xl dark:bg-black">
+      <div className="relative mt-36 w-[90%] mx-auto lg:w-[75%] flex items-center flex-col">
         <motion.div
           animate={{ scale: 3 }}
           transition={{ scale: arrowTransition }}
@@ -58,45 +57,11 @@ export const Hero = () => {
         </motion.div>
         <div className="mt-12 max-w-screen-lg">
           <h1 className="text-2xl md:text-5xl text-center font-medium leading-20 capitalize">
-            CS graduate and Adept Front-End developer, Focusing On Mobile-First
-            Development
+            CS graduate and Adept Full Stack developer, With Focusing responsive
+            design, accessibility and pleasing aesthetics.
           </h1>
-          <div className="flex justify-center items-center my-4 gap-5 ">
-            <motion.div
-              animate={{ rotate: ["-360deg", "0deg"] }}
-              transition={{
-                rotate: {
-                  duration: 3.8,
-                  repeat: Infinity,
-                },
-              }}
-              className="relative md:w-4 md:h-4 w-8 h-8 hidden md:block ">
-              <Image src="/assets/img/react-colored.svg" alt="" fill />
-            </motion.div>
-            <p className="text-xs md:text-xl text-center">
-              I love working with
-              <span className=" text-skin-accent font-medium ml-1">
-                React JS
-              </span>
-              ,
-              <span className=" text-skin-accent font-medium ml-1">
-                Next JS
-              </span>{" "}
-              for Better SEO and
-              <span className=" text-skin-accent font-medium ml-1 mr-1">
-                Tailwind
-              </span>
-              for CSS
-            </p>
-          </div>
         </div>
-      </div>
-      <div className="mt-56 px-20 flex item-center justify-center gap-2 2xl:hidden">
-        <motion.div
-          animate={{ y: ["10px", "-10px", "10px"] }}
-          transition={{ y: arrowTransition }}>
-          <FaArrowDown className="text-skin-accent text-3xl cursor-pointer" />
-        </motion.div>
+        <Skills />
       </div>
     </section>
   );
