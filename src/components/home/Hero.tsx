@@ -31,7 +31,7 @@ const arrowTransition = {
 
 export const Hero = () => {
   return (
-    <section className="text-skin-primary py-12 bg-skin-background 2xl dark:bg-black">
+    <section className="text-skin-primary py-12 bg-skin-background 2xl ">
       <div className="relative mt-36 w-[90%] mx-auto lg:w-[75%] flex items-center flex-col">
         <motion.div
           animate={{ scale: 3 }}
