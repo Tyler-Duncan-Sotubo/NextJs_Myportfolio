@@ -16,7 +16,7 @@ export const projectData: IProjects[] = [
     Admin can upload, edit and delete songs from the admin dashboard.
     Songs are uploaded to Cloudinary and stored in a MongoDB database.`,
     source: "https://github.com/Tyler-Wiz/Lyrics-App",
-    web: "/",
+    web: "https://absorbing-stone-production.up.railway.app/",
     tech: [
       { name: "Express JS" },
       { name: "Mongo DB" },
@@ -35,7 +35,7 @@ export const projectData: IProjects[] = [
     Data is fetched from the backend API built using Express Js and PostgreSQL, Product images are stored in an Amazon S3 Bucket,
     Products are uploaded from the admin dashboard built using Next Js and Redux Tool Kit for state management.`,
     source: "https://github.com/Tyler-Wiz/Full-Stack-Ecommerce",
-    web: "/",
+    web: "https://full-stack-ecommerce-sable.vercel.app/",
     tech: [
       { name: "Javascript" },
       { name: "Express JS" },
@@ -55,7 +55,7 @@ export const projectData: IProjects[] = [
      The backend API was built using Express Js and PostgreSQL.
      Registered users were stored in a PostgreSQL database and Welcome Email sent with NodeMailer`,
     source: "https://github.com/Tyler-Wiz/Smirnoff-party",
-    web: "/",
+    web: "https://smirnoff-party-frontend-production.up.railway.app/",
     tech: [
       { name: "Javascript" },
       { name: "Express JS" },
