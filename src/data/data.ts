@@ -47,6 +47,22 @@ export const projectData: IProjects[] = [
     ],
   },
   {
+    name: "PowerZone Gym",
+    img: "/assets/img/projects/gym.png",
+    desc: `COMING SOON`,
+    source: "/",
+    web: "/",
+    tech: [
+      { name: "Javascript" },
+      { name: "Express JS" },
+      { name: "Mongo DB" },
+      { name: "Amazon S3 Bucket" },
+      { name: "Next Js" },
+      { name: "Redux Tool Kit" },
+      { name: "Vanilla CSS" },
+    ],
+  },
+  {
     name: "Smirnoff Party",
     img: "/assets/img/projects/NoknownAddress.png",
     desc: `Global Client Smirnoff's project for the Smirnoff "NoknownAddress" Party Campaign.  
@@ -57,14 +73,15 @@ export const projectData: IProjects[] = [
     source: "https://github.com/Tyler-Wiz/Smirnoff-party",
     web: "https://smirnoff-party-frontend-production.up.railway.app/",
     tech: [
-      { name: "Javascript" },
+      { name: "Typescript" },
       { name: "Express JS" },
       { name: "PostgreSQL" },
       { name: "Next Js" },
       { name: "Redux Tool Kit" },
-      { name: "Tailwind CSS" },
+      { name: "Vanilla CSS" },
     ],
   },
+
   {
     name: "Artists Profile API",
     img: "/assets/img/projects/artistApi.png",
