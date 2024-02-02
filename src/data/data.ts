@@ -1,9 +1,37 @@
-import { NavData, IProjects, ISkills } from "@/lib/interface";
+import { NavData, IProjects, ISkills, IBlog } from "@/lib/interface";
 
 export const navData: NavData[] = [
   { name: "about", path: "about" },
   { name: "projects", path: "projects" },
+  { name: "blog", path: "blog" },
   { name: "contact", path: "contact" },
+];
+
+export const blogData: IBlog[] = [
+  {
+    title: "Building a Tic Tac Toe App with React.js",
+    img: "/assets/img/blog/tictac.jpeg",
+    date: "February 2024",
+    desc: "A Step-by-Step Guide 2024 to building a Tic Tac Toe game with React.js",
+    link: "https://dev.to/tylerwiz/building-a-tic-tac-toe-app-with-reactjs-a-step-by-step-guide-2024-hbj",
+    github: "",
+  },
+  {
+    title: "Building a Tic Tac Toe App with React.js",
+    img: "/assets/img/blog/blogholder1.png",
+    date: "February 2024",
+    desc: "A Step-by-Step Guide 2024 to building a Tic Tac Toe game with React.js",
+    link: "https://dev.to/tylerwiz/building-a-tic-tac-toe-app-with-reactjs-a-step-by-step-guide-2024-hbj",
+    github: "",
+  },
+  {
+    title: "Building a Tic Tac Toe App with React.js",
+    img: "/assets/img/blog/blogholder2.png",
+    date: "February 2024",
+    desc: "A Step-by-Step Guide 2024 to building a Tic Tac Toe game with React.js",
+    link: "https://dev.to/tylerwiz/building-a-tic-tac-toe-app-with-reactjs-a-step-by-step-guide-2024-hbj",
+    github: "",
+  },
 ];
 
 export const projectData: IProjects[] = [

@@ -56,13 +56,6 @@ describe("Home Components", () => {
     expect(projectsComponent).toBeInTheDocument();
   });
 
-  it("should show Skills Component", () => {
-    mockAllIsIntersecting(true);
-    render(<Home />);
-    const skillsComponent = screen.getByTestId("Skills");
-    expect(skillsComponent).toBeInTheDocument();
-  });
-
   it("should show Footer Component", () => {
     mockAllIsIntersecting(true);
     render(<Home />);

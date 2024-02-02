@@ -16,3 +16,12 @@ export interface NavData {
   name: string;
   path: string;
 }
+
+export interface IBlog {
+  title: string;
+  img: string;
+  date: string;
+  desc: string;
+  link: string;
+  github: string;
+}
