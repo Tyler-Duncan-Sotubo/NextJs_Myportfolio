@@ -47,7 +47,7 @@ export const Contact = () => {
     <section className="w-[90%] lg:w-[75%] mx-auto mt-16" id="contact">
       <Header name="Contact Me" description="Lets Talk Ideas" />
       <div className="md:flex flex md:flex-row flex-col items-center md:gap-10 gap-1 mt-20">
-        <div className="md:w-[55%] mb-8 w-full ">
+        {/* <div className="md:w-[55%] mb-8 w-full ">
           <p className="text-lg">
             I&apos;d love if you reached out to me. Tell me a little bit about
             your project, drop me a line and I’ll get back to you ASAP!
@@ -60,11 +60,11 @@ export const Contact = () => {
             <IoLocation size={30} className="text-skin-accent" />
             <p className="text-lg">London, UK</p>
           </div>
-        </div>
+        </div> */}
         <form
           data-testid="form"
           onSubmit={handleSubmit(onSubmit)}
-          className="font-Lato md:w-[45%] w-full">
+          className="font-Lato md:w-[90%] w-full mx-auto">
           <p className=" text-xl font-semibold my-3">Write me a message👇</p>
           <div className="flex flex-col">
             <label>Name</label>
@@ -93,7 +93,7 @@ export const Contact = () => {
             <textarea
               placeholder="message"
               {...register("message", { required: true })}
-              className={`${inputStyle} h-44`}></textarea>
+              className={`${inputStyle} h-52`}></textarea>
             {errors.message && (
               <span className={`${errorStyle}`}>Please leave a message</span>
             )}
