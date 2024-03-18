@@ -8,10 +8,10 @@ type Props = {
 export const Header: FC<Props> = ({ name, description }) => {
   return (
     <>
-      <h2 className="mb-2 md:text-2xl text-center font-medium uppercase text-skin-accent">
+      <h2 className="mb-2 md:text-2xl text-center font-bold font-Inter uppercase text-skin-dark tracking-widest">
         {name}
       </h2>
-      <h3 className="md:text-3xl text-center text-skin-primary font-bold w-2/5 mx-auto">
+      <h3 className="md:text-lg text-center text-skin-secondary font-Inter tracking-wide">
         {description}
       </h3>
     </>

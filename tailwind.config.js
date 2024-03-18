@@ -13,6 +13,7 @@ module.exports = {
           primary: "var(--primary)",
           secondary: "var(--secondary)",
           accent: "var(--accent)",
+          accentBg: "var(--accentBg)",
           light: "var(--text-light)",
           dark: "var(--text-dark)",
           background: "var(--background)",
@@ -28,6 +29,7 @@ module.exports = {
           background: "var(--background)",
           herobackground: "var(--herobackground)",
           light: "var(--text-light)",
+          accentBg: "var(--accentBg)",
         },
       },
       borderColor: {
@@ -39,7 +41,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      Lato: ["Lato"],
+      Inter: ["Inter"],
     },
   },
   plugins: [],

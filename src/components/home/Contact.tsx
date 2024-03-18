@@ -15,7 +15,7 @@ interface IFormInput {
 }
 
 const inputStyle =
-  "bg-gray-100 px-4 py-2 w-full rounded-lg outline-orange-300 my-2 placeholder:capitalize font-semibold";
+  "bg-gray-100 px-4 py-2 w-full rounded-lg border-none outline-none my-2 placeholder:capitalize font-semibold font-inter";
 const errorStyle = "text-red-700 my-1 text-sm capitalize";
 
 export const Contact = () => {
@@ -44,31 +44,24 @@ export const Contact = () => {
   };
 
   return (
-    <section className="w-[90%] lg:w-[75%] mx-auto mt-16" id="contact">
-      <Header name="Contact Me" description="Lets Talk Ideas" />
-      <div className="md:flex flex md:flex-row flex-col items-center md:gap-10 gap-1 mt-20">
-        {/* <div className="md:w-[55%] mb-8 w-full ">
-          <p className="text-lg">
-            I&apos;d love if you reached out to me. Tell me a little bit about
-            your project, drop me a line and I’ll get back to you ASAP!
-          </p>
-          <div className="flex gap-2 items-center mt-10">
-            <IoMailOutline size={30} className="text-skin-accent" />
-            <p className="text-lg">tylertooxclusive@gmail.com</p>
-          </div>
-          <div className="flex gap-2 items-center my-3">
-            <IoLocation size={30} className="text-skin-accent" />
-            <p className="text-lg">London, UK</p>
-          </div>
-        </div> */}
+    <section className="w-full pt-16 bg-skin-background" id="contact">
+      <div className="w-1/3 mx-auto py-8">
+        <Header
+          name="Send me a message!"
+          description="Got a question or proposal, or just want to say hello? Go ahead."
+        />
+      </div>
+      <div className="w-[90%] mx-auto lg:w-[80%] md:flex flex md:flex-row flex-col items-center md:gap-10 gap-1">
         <form
           data-testid="form"
           onSubmit={handleSubmit(onSubmit)}
-          className="font-Lato md:w-[90%] w-full mx-auto">
-          <p className=" text-xl font-semibold my-3">Write me a message👇</p>
+          className="font-Lato w-full mx-auto flex gap-2 flex-col">
           <div className="flex flex-col">
-            <label>Name</label>
+            <label htmlFor="name" className="text-skin-accent">
+              Your Name
+            </label>
             <input
+              id="name"
               placeholder="name"
               {...register("name", { required: true })}
               className={`${inputStyle}`}
@@ -78,8 +71,11 @@ export const Contact = () => {
             )}
           </div>
           <div className="flex flex-col">
-            <label>Email</label>
+            <label htmlFor="email" className="text-skin-accent">
+              Your Email
+            </label>
             <input
+              id="email"
               placeholder="email"
               {...register("email", { required: true })}
               className={`${inputStyle}`}
@@ -89,8 +85,11 @@ export const Contact = () => {
             )}
           </div>
           <div className="flex flex-col">
-            <label>Your Message</label>
+            <label htmlFor="message" className="text-skin-accent">
+              Your Message
+            </label>
             <textarea
+              id="message"
               placeholder="message"
               {...register("message", { required: true })}
               className={`${inputStyle} h-52`}></textarea>
@@ -101,7 +100,7 @@ export const Contact = () => {
           <div className="my-4 flex justify-end">
             <Button
               name="Send Message"
-              color="bg-skin-accent"
+              color="bg-skin-herobackground"
               icon={<FiSend size={24} />}
             />
           </div>
