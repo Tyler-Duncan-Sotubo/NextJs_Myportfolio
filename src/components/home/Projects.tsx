@@ -10,7 +10,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full bg-skin-background font-Inter py-8">
+      className="w-full bg-skin-background font-Inter py-12">
       <div className="w-[90%] mx-auto lg:w-[80%]">
         <Header
           name="My Projects"

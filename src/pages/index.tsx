@@ -4,6 +4,7 @@ import { Contact } from "@/components/home/Contact";
 import { Footer } from "@/components/home/Footer";
 import { Hero } from "@/components/home/Hero";
 import { Projects } from "@/components/home/Projects";
+import Stack from "@/components/home/Stack";
 import Head from "next/head";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <Nav />
         <Hero />
         <About />
+        <Stack />
         <Projects />
         <Contact />
         <Footer />

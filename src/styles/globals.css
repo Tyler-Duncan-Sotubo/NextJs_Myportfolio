@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --primary: rgb(148 163 184);
+    --primary: rgb(150 163 189);
     --secondary: rgb(209, 209, 209);
     --accent: rgb(94 234 212);
     --accentBg:rgba(45, 212, 191, .3)
@@ -25,4 +25,8 @@
     --background: #1f2833;
     --herobackground: rgb(239, 242, 241);
   }
+}
+
+body{
+  background-color: rgb(15 23 42);
 }

@@ -45,12 +45,10 @@ export const Contact = () => {
 
   return (
     <section className="w-full pt-16 bg-skin-background" id="contact">
-      <div className="w-1/3 mx-auto py-8">
-        <Header
-          name="Send me a message!"
-          description="Got a question or proposal, or just want to say hello? Go ahead."
-        />
-      </div>
+      <Header
+        name="Send me a message!"
+        description="Got a question or proposal, or just want to say hello? Go ahead."
+      />
       <div className="w-[90%] mx-auto lg:w-[80%] md:flex flex md:flex-row flex-col items-center md:gap-10 gap-1">
         <form
           data-testid="form"
