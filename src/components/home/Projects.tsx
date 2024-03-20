@@ -17,7 +17,7 @@ export const Projects = () => {
           description="Take a look some of my featured projects"
         />
         <div className="mt-4">
-          {projectData.map((item, index) => (
+          {projectData.slice(0, 3).map((item, index) => (
             <div
               key={index}
               className={`py-12 flex ${

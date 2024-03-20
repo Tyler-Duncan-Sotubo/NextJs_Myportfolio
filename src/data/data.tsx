@@ -25,11 +25,11 @@ import {
 } from "react-icons/si";
 
 export const core = [
+  { name: "Javascript", icon: <SiJavascript /> },
+  { name: "Typescript", icon: <SiTypescript /> },
   { name: "HTML", icon: <FaHtml5 /> },
   { name: "CSS", icon: <FaCss3 /> },
   { name: "PHP", icon: <FaPhp /> },
-  { name: "Javascript", icon: <SiJavascript /> },
-  { name: "Typescript", icon: <SiTypescript /> },
   { name: "React", icon: <FaReact /> },
   { name: "Next Js", icon: <SiNextdotjs /> },
   { name: "Express Js", icon: <SiExpress /> },
@@ -112,9 +112,7 @@ export const projectData: IProjects[] = [
     img: "/assets/img/projects/plug.png",
     desc: `This is a lyrics website, built using the M.E.R.N Stack, 
     Data is fetched from the backend API built using Express Js and MongoDB. 
-    Client and Admin side are built using Next Js and Redux Tool Kit for state management.
-    Admin can upload, edit and delete songs from the admin dashboard.
-    Songs are uploaded to Cloudinary and stored in a MongoDB database.`,
+    Client and Admin side are built using Next Js and Redux Tool Kit for state management.`,
     source: "https://github.com/Tyler-Wiz/Lyrics-App",
     web: "https://absorbing-stone-production.up.railway.app/",
     tech: [
@@ -132,7 +130,7 @@ export const projectData: IProjects[] = [
     img: "/assets/img/projects/sportzy.png",
     desc: `Full Stack Ecommerce website built using the P.E.R.N Stack,
     the client side was built using Next Js and Redux Tool Kit for state management.
-    Data is fetched from the backend API built using Express Js and PostgreSQL, Product images are stored in an Amazon S3 Bucket.`,
+    Data is fetched from the backend API built using Express Js and PostgreSQL.`,
     source: "https://github.com/Tyler-Wiz/Full-Stack-Ecommerce",
     web: "https://full-stack-ecommerce-sable.vercel.app/",
     tech: [
@@ -148,10 +146,9 @@ export const projectData: IProjects[] = [
   {
     name: "Gazetteer App",
     img: "/assets/img/projects/gazet.png",
-    desc: `
-  This application is envisaged as a “mobile first“ website that will operate equally well
-  on desktop computers. It will provide profiling for all countries
-  through the presentation of demographic, climatic, geographical and other data.`,
+    desc: `Gazetteer, a mobile first web application that allows users to search for a location and get information about the location. 
+    It provides information about the location, weather, and nearby places of interest. 
+    The app was built using HTML, PHP, jQuery/AJAX, Leaflet, Bootstrap, and APIs.`,
     source: "https://github.com/Tyler-Wiz/tylerDuncan/tree/main/project1",
     web: "https://tylersotubo.co.uk/gazetteer/",
     tech: [
@@ -161,6 +158,52 @@ export const projectData: IProjects[] = [
       { name: "Leaflet" },
       { name: "Bootstrap" },
       { name: "APIs" },
+    ],
+  },
+  {
+    name: "Smirnoff Party",
+    img: "/assets/img/projects/NoknownAddress.png",
+    desc: `Global Client Smirnoff's project for the Smirnoff "NoknownAddress" Party Campaign.  
+    The website was built using the P.E.R.N Stack.
+    The wesbite focus was to allow users to register for the party with email address and instagram handle.
+     The backend API was built using Express Js and PostgreSQL.
+     Registered users were stored in a PostgreSQL database and Welcome Email sent with NodeMailer`,
+    source: "https://github.com/Tyler-Wiz/Smirnoff-party",
+    web: "https://smirnoff-party-frontend-production.up.railway.app/",
+    tech: [
+      { name: "Typescript" },
+      { name: "Express JS" },
+      { name: "PostgreSQL" },
+      { name: "Next Js" },
+      { name: "Redux Tool Kit" },
+      { name: "Vanilla CSS" },
+    ],
+  },
+
+  {
+    name: "Artists Profile API",
+    img: "/assets/img/projects/artistApi.png",
+    desc: `This is an Open API built using Express Js and PostgreSQL. The project is till in progress.
+    The aim is to build an API that can be used by artists to create their profile and share their work.`,
+    source: "https://github.com/Tyler-Wiz/Artist-Profile-API",
+    web: "/",
+    tech: [
+      { name: "Javascript" },
+      { name: "Express JS" },
+      { name: "PostgreSQL" },
+      { name: "Swagger" },
+    ],
+  },
+  {
+    name: "Portfolio Version 1",
+    img: "/assets/img/projects/version1.png",
+    desc: `This is the first version of my portfolio website built using Next Js and Tailwind CSS.`,
+    source: "https://github.com/Tyler-Wiz/Portfolio-V1",
+    web: "https://v1.tylerduncan.dev/",
+    tech: [
+      { name: "Javascript" },
+      { name: "Next Js" },
+      { name: "Tailwind CSS" },
     ],
   },
 ];

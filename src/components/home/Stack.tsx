@@ -3,6 +3,8 @@ import { Header } from "../common/header";
 import { core, experience, others } from "@/data/data";
 import { IoCheckmarkDoneOutline } from "react-icons/io5";
 import { FiMinus } from "react-icons/fi";
+import Button from "../common/button";
+import { FaDownload } from "react-icons/fa";
 
 export default function Stack() {
   return (
@@ -68,6 +70,11 @@ export default function Stack() {
           ))}
         </div>
       </div>
+      <Button
+        name="Download CV"
+        color="bg-skin-herobackground"
+        icon={<FaDownload size={24} />}
+      />
     </section>
   );
 }
