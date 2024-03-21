@@ -1,6 +1,9 @@
 import { AboutData } from "@/data/data";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll/modules";
+import { Link as Scroll } from "react-scroll/modules";
+import Button from "../common/button";
+import { FaDownload } from "react-icons/fa";
+import Link from "next/link";
 
 export const About = () => {
   const [activeIndex, setActiveIndex] = useState<Number>(0);
@@ -10,7 +13,7 @@ export const About = () => {
       <div className="flex flex-col md:flex-row w-[90%] mx-auto lg:w-[80%] justify-between py-8 mt-10 gap-24">
         <div className="md:flex flex-col justify-center gap-7 md:w-[35%] w-full hidden">
           {AboutData.map((item, index) => (
-            <Link
+            <Scroll
               key={index}
               activeClass="active"
               to={item.path}
@@ -32,7 +35,7 @@ export const About = () => {
                   } `}></div>
                 <p className="text-skin-dark uppercase text-sm">{item.name}</p>
               </div>
-            </Link>
+            </Scroll>
           ))}
         </div>
         <div className="w-full mx-auto max-w-3xl">
@@ -54,6 +57,15 @@ export const About = () => {
             friends.
           </p>
         </div>
+      </div>
+      <div className="flex justify-center my-4">
+        <Link href="/Resume.pdf" target="_blank" download>
+          <Button
+            name="Download CV"
+            color="bg-skin-herobackground"
+            icon={<FaDownload />}
+          />
+        </Link>
       </div>
     </section>
   );
