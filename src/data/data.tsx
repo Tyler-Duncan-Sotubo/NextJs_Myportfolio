@@ -7,6 +7,7 @@ import {
   FaReact,
   FaBootstrap,
   FaGitSquare,
+  FaGithub,
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -22,14 +23,19 @@ import {
   SiPostgresql,
   SiNextdotjs,
   SiTypescript,
+  SiPython,
 } from "react-icons/si";
 
-export const core = [
+export const Lang = [
   { name: "Javascript", icon: <SiJavascript /> },
   { name: "Typescript", icon: <SiTypescript /> },
   { name: "HTML", icon: <FaHtml5 /> },
   { name: "CSS", icon: <FaCss3 /> },
   { name: "PHP", icon: <FaPhp /> },
+  { name: "Python", icon: <SiPython /> },
+];
+
+export const Frameworks = [
   { name: "React", icon: <FaReact /> },
   { name: "Next Js", icon: <SiNextdotjs /> },
   { name: "Express Js", icon: <SiExpress /> },
@@ -48,6 +54,7 @@ export const others = [
   { name: "Amazon S3", icon: <SiAmazonaws /> },
   { name: "Swagger", icon: <SiSwagger /> },
   { name: "OpenAPI", icon: <SiOpenapiinitiative /> },
+  { name: "Github", icon: <FaGithub /> },
 ];
 
 export const navData: NavData[] = [
@@ -108,25 +115,8 @@ export const experience = [
 
 export const projectData: IProjects[] = [
   {
-    name: "Lyrics Plug",
-    img: "/assets/img/projects/plug.png",
-    desc: `This is a lyrics website, built using the M.E.R.N Stack, 
-    Data is fetched from the backend API built using Express Js and MongoDB. 
-    Client and Admin side are built using Next Js and Redux Tool Kit for state management.`,
-    source: "https://github.com/Tyler-Wiz/Lyrics-App",
-    web: "https://absorbing-stone-production.up.railway.app/",
-    tech: [
-      { name: "Express JS" },
-      { name: "Mongo DB" },
-      { name: "Cloudinary" },
-      { name: "Typescript" },
-      { name: "Next Js" },
-      { name: "Redux Tool Kit" },
-      { name: "Tailwind CSS" },
-    ],
-  },
-  {
     name: "Sportzy",
+    madeat: "tooXclusive",
     img: "/assets/img/projects/sportzy.png",
     desc: `Full Stack Ecommerce website built using the P.E.R.N Stack,
     the client side was built using Next Js and Redux Tool Kit for state management.
@@ -145,6 +135,7 @@ export const projectData: IProjects[] = [
   },
   {
     name: "Gazetteer App",
+    madeat: "IT Career Switch",
     img: "/assets/img/projects/gazet.png",
     desc: `Gazetteer, a mobile first web application that allows users to search for a location and get information about the location. 
     It provides information about the location, weather, and nearby places of interest. 
@@ -161,7 +152,43 @@ export const projectData: IProjects[] = [
     ],
   },
   {
+    name: "Company Directory",
+    madeat: "IT Career Switch",
+    img: "/assets/img/projects/company.png",
+    desc: `Company Directory, a mobile first web application that allows users access to the database to add, edit, delete data.it allows users to search or filter company information within the database.`,
+    source: "https://github.com/Tyler-Wiz/Company-Directory",
+    web: "https://tylersotubo.co.uk/company/",
+    tech: [
+      { name: "HTML" },
+      { name: "PHP" },
+      { name: "jQuery/AJAX" },
+      { name: "Bootstrap" },
+      { name: "MySQL" },
+      { name: "phpMyAdmin" },
+    ],
+  },
+  {
+    name: "Lyrics Plug",
+    madeat: "tooXclusive",
+    img: "/assets/img/projects/plug.png",
+    desc: `This is a lyrics website, built using the M.E.R.N Stack, 
+    Data is fetched from the backend API built using Express Js and MongoDB. 
+    Client and Admin side are built using Next Js and Redux Tool Kit for state management.`,
+    source: "https://github.com/Tyler-Wiz/Lyrics-App",
+    web: "https://absorbing-stone-production.up.railway.app/",
+    tech: [
+      { name: "Express JS" },
+      { name: "Mongo DB" },
+      { name: "Cloudinary" },
+      { name: "Typescript" },
+      { name: "Next Js" },
+      { name: "Redux Tool Kit" },
+      { name: "Tailwind CSS" },
+    ],
+  },
+  {
     name: "Smirnoff Party",
+    madeat: "MediareachOMD Nigeria",
     img: "/assets/img/projects/NoknownAddress.png",
     desc: `Global Client Smirnoff's project for the Smirnoff "NoknownAddress" Party Campaign.  
     The website was built using the P.E.R.N Stack.
@@ -182,6 +209,7 @@ export const projectData: IProjects[] = [
 
   {
     name: "Artists Profile API",
+    madeat: "tooXclusive",
     img: "/assets/img/projects/artistApi.png",
     desc: `This is an Open API built using Express Js and PostgreSQL. The project is till in progress.
     The aim is to build an API that can be used by artists to create their profile and share their work.`,
@@ -196,6 +224,7 @@ export const projectData: IProjects[] = [
   },
   {
     name: "Portfolio Version 1",
+    madeat: "Personal Project",
     img: "/assets/img/projects/version1.png",
     desc: `This is the first version of my portfolio website built using Next Js and Tailwind CSS.`,
     source: "https://github.com/Tyler-Wiz/Portfolio-V1",

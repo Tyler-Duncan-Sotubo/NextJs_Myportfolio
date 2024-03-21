@@ -15,18 +15,8 @@
     --background: rgb(15 23 42);
     --herobackground: rgba(45, 212, 191, .3);
   }
-
-  .theme-dark {
-    --primary: #c5c6c7;
-    --secondary: rgb(209, 209, 209);
-    --accent: #45a29e;
-    --text-light: rgb(0, 0, 0);
-    --text-dark: rgb(255, 255, 255);
-    --background: #1f2833;
-    --herobackground: rgb(239, 242, 241);
-  }
 }
 
 body{
   background-color: rgb(15 23 42);
-}
+} 

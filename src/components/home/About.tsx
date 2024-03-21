@@ -6,7 +6,7 @@ export const About = () => {
   const [activeIndex, setActiveIndex] = useState<Number>(0);
 
   return (
-    <section id="about" className="font-Inter bg-skin-background md:mb-24">
+    <section id="about" className="font-Inter bg-skin-background md:pb-24">
       <div className="flex flex-col md:flex-row w-[90%] mx-auto lg:w-[80%] justify-between py-8 mt-10 gap-24">
         <div className="md:flex flex-col justify-center gap-7 md:w-[35%] w-full hidden">
           {AboutData.map((item, index) => (
@@ -42,16 +42,16 @@ export const About = () => {
             my hand at creating custom wordpress themes going head first into
             the rabbit hole of coding and web development.
           </p>
-          <p className="text-xl text-skin-primary my-6 tracking-wide font-regular font-light leading-relaxed ">
+          <p className="text-xl text-skin-primary my-6 tracking-wide font-regular font-light leading-relaxed">
             Fast-forward to today, and I’ve had the privilege of building
             software for an advertising agency and a start-up. I most enjoy
             building software in the sweet spot where design and engineering
             meet — things that look good but are also built well under the hood.
           </p>
-          <p className="text-xl text-skin-primary my-6 tracking-wide font-regular font-light leading-relaxed ">
+          <p className="text-xl text-skin-primary my-6 tracking-wide font-regular font-light leading-relaxed">
             When I’m not at the computer, I’m usually running 5k Marathon,
-            reading, hanging out with my wife and two kids, playing NBA 2K, NFL
-            Madden or enjoying a game of chess with friends.
+            reading, playing NBA 2K, NFL Madden or enjoying a game of chess with
+            friends.
           </p>
         </div>
       </div>

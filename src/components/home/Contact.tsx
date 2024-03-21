@@ -5,7 +5,6 @@ import { toast } from "react-toastify";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Header } from "../common/header";
 import Button from "../common/button";
-import { IoLocation, IoMailOutline } from "react-icons/io5";
 import { FiSend } from "react-icons/fi";
 
 interface IFormInput {
@@ -32,7 +31,7 @@ export const Contact = () => {
         (result) => {
           if (result.text === "OK") {
             toast.success("Message sent", {
-              position: toast.POSITION.BOTTOM_RIGHT,
+              position: "bottom-right",
             });
           }
         },
@@ -47,7 +46,7 @@ export const Contact = () => {
     <section className="w-full pt-16 bg-skin-background" id="contact">
       <Header
         name="Send me a message!"
-        description="Got a question or proposal, or just want to say hello? Go ahead."
+        description="Got a question or proposal, or just want to say hello? Feel free to reach out to me!"
       />
       <div className="w-[90%] mx-auto lg:w-[80%] md:flex flex md:flex-row flex-col items-center md:gap-10 gap-1">
         <form

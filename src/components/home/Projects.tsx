@@ -32,9 +32,14 @@ export const Projects = () => {
                 />
               </div>
               <div className="w-full md:w-1/2">
-                <p className="text-xl uppercase font-semibold text-skin-dark">
+                <p className="text-xl capitalize font-semibold text-skin-dark">
                   {item.name}
                 </p>
+                <div className="flex">
+                  <p className="text-sm font-semibold text-skin-primary">
+                    Made at - {item.madeat}
+                  </p>
+                </div>
                 <div className="flex gap-2 mt-4 flex-wrap ">
                   {item.tech.map((item: any, index: number) => (
                     <div key={index}>
@@ -50,8 +55,8 @@ export const Projects = () => {
                     href={item.source}
                     target="_blank"
                     className="flex items-center gap-2">
-                    <FaGithub className="text-skin-accent" />
-                    <p className=" text-skin-accent font-semibold hover:scale-90">
+                    <FaGithub className="text-skin-dark" />
+                    <p className="text-skin-dark font-semibold hover:scale-90">
                       View Code
                     </p>
                   </Link>
@@ -59,8 +64,8 @@ export const Projects = () => {
                     href={item.web}
                     target="_blank"
                     className="flex items-center gap-2">
-                    <FaLink className=" text-skin-accent" />
-                    <p className=" text-skin-accent font-semibold hover:scale-90">
+                    <FaLink className=" text-skin-dark" />
+                    <p className=" text-skin-dark font-semibold hover:scale-90">
                       Visit Website
                     </p>
                   </Link>
@@ -69,12 +74,13 @@ export const Projects = () => {
             </div>
           ))}
         </div>
-        <Link href="/projects">
-          <h3 className="text-xl py-2 text-bold text-skin-dark cursor-pointer group">
-            View Full Project Archive
-            <span className="group-hover:ml-2 duration-700 "> &rarr;</span>
-          </h3>
-        </Link>
+        <div className="flex justify-center font-Inter tracking-wide">
+          <Link href="/projects">
+            <h3 className="uppercase text-lg py-2 px-8 text-bold text-skin-dark cursor-pointer border-[1.5px] border-skin-accent rounded-xl hover:bg-skin-herobackground hover:text-skin-accent">
+              View All Projects
+            </h3>
+          </Link>
+        </div>
       </div>
     </section>
   );

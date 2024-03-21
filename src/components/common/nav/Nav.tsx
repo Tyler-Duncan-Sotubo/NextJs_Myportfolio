@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { navData } from "@/data/data";
 import { Link } from "react-scroll/modules";
 import SocialIcons from "../SocialIcons";
+import ThemeSwitcher from "@/theme/ThemeSwitcher";
 
 export const Nav = () => {
   const [hamburger, setHamburger] = useState<boolean>(false);
@@ -41,6 +42,7 @@ export const Nav = () => {
               isOpen ? " rotate-[45deg] bottom-[2px]  " : ""
             }`}></div>
         </div>
+
         <ul
           className={`fixed duration-300 shadow-lg bg-white cursor-pointer top-0 px-10 py-20 z-[9998] h-screen w-full  
         md:top-6 md:max-w-[370px] md:h-[500px]

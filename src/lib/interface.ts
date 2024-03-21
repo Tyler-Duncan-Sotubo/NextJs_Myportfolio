@@ -5,6 +5,7 @@ export interface IProjects {
   source: string;
   web: string;
   tech: any;
+  madeat: string;
 }
 
 export interface ISkills {
