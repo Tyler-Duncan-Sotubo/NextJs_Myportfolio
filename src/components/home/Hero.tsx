@@ -24,9 +24,6 @@ export const Hero = () => {
           <SocialIcons size="text-3xl" />
         </div>
       </div>
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-        <SlMouse className="text-skin-accent text-4xl animate-bounce duration-1000" />
-      </div>
     </section>
   );
 };
