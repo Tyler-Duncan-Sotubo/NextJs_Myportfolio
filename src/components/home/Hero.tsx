@@ -10,9 +10,7 @@ export const Hero = () => {
       className="text-skin-primary flex items-center 2xl font-Inter xl:pb-32 h-screen">
       <div className="relative mt-16 w-[90%] mx-auto lg:w-[80%] flex flex-col gap-4">
         <div className=" max-w-3xl flex flex-col gap-7">
-          <p className="dark:text-skin-accent tracking-widest text-skin-primary">
-            Hi, my name is
-          </p>
+          <p className="text-skin-accent tracking-widest">Hi, my name is</p>
           <h1 className="text-2xl md:text-6xl leading-20 capitalize text-skin-dark tracking-wide font-bold">
             Tyler Duncan Sotubo
           </h1>

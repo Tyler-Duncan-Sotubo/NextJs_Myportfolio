@@ -58,7 +58,7 @@ export const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center my-4">
+      <div className="flex justify-center md:my-4 mb-32">
         <Link href="/Resume.pdf" target="_blank" download>
           <Button
             name="Download CV"
