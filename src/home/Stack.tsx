@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../common/header";
+import { Header } from "../components/header";
 import { experience, others, Lang, Frameworks } from "@/data/data";
 import { IoCheckmarkDoneOutline } from "react-icons/io5";
 import { FiMinus } from "react-icons/fi";

@@ -1,10 +1,10 @@
-import { Nav } from "@/components/common/nav/Nav";
-import { About } from "@/components/home/About";
-import { Contact } from "@/components/home/Contact";
-import { Footer } from "@/components/home/Footer";
-import { Hero } from "@/components/home/Hero";
-import { Projects } from "@/components/home/Projects";
-import Stack from "@/components/home/Stack";
+import { Nav } from "@/components/Nav";
+import { About } from "@/home/About";
+import { Contact } from "@/home/Contact";
+import { Footer } from "@/home/Footer";
+import { Hero } from "@/home/Hero";
+import { Projects } from "@/home/Projects";
+import Stack from "@/home/Stack";
 import Head from "next/head";
 
 export default function Home() {

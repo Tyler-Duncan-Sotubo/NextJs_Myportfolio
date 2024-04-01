@@ -1,5 +1,5 @@
-import SkillsButton from "@/components/common/SkillsButton";
-import { Footer } from "@/components/home/Footer";
+import SkillsButton from "@/components/SkillsButton";
+import { Footer } from "@/home/Footer";
 import { projectData } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";

@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { Nav } from "@/components/common/nav/Nav";
+import { Nav } from "@/components/Nav";
 
 describe("Desktop Nav", () => {
   describe("NavList", () => {

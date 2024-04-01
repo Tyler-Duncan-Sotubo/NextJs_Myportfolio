@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { navData } from "@/data/data";
 import { Link } from "react-scroll/modules";
-import SocialIcons from "../SocialIcons";
+import SocialIcons from "./SocialIcons";
 import ThemeSwitcher from "@/theme/ThemeSwitcher";
 
 export const Nav = () => {

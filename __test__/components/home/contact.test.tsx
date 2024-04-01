@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { Contact } from "@/components/home/Contact";
+import { Contact } from "@/home/Contact";
 import { act } from "react-dom/test-utils";
 
 describe("contact from", () => {

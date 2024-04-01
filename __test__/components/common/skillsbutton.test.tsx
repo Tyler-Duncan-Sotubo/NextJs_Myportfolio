@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import SkillsButton from "@/components/common/SkillsButton";
+import SkillsButton from "@/components/SkillsButton";
 
 describe("skillsButton", () => {
   it("should show name prop", () => {

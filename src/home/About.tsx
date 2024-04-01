@@ -1,7 +1,7 @@
 import { AboutData } from "@/data/data";
 import React, { useEffect, useState } from "react";
 import { Link as Scroll } from "react-scroll/modules";
-import Button from "../common/button";
+import Button from "../components/button";
 import { FaDownload } from "react-icons/fa";
 import Link from "next/link";
 
@@ -59,7 +59,7 @@ export const About = () => {
         </div>
       </div>
       <div className="flex justify-center md:my-4 mb-32">
-        <Link href="/Resume.pdf" target="_blank" download>
+        <Link href="/Tyler-Duncan-Sotubo.pdf" target="_blank" download>
           <Button
             name="Download CV"
             color="bg-skin-herobackground"

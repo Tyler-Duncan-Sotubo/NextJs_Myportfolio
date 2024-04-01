@@ -3,8 +3,8 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { Header } from "../common/header";
-import Button from "../common/button";
+import { Header } from "../components/header";
+import Button from "../components/button";
 import { FiSend } from "react-icons/fi";
 
 interface IFormInput {

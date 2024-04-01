@@ -1,5 +1,5 @@
 import React from "react";
-import SocialIcons from "../common/SocialIcons";
+import SocialIcons from "../components/SocialIcons";
 type Props = {};
 
 export const Footer = (props: Props) => {

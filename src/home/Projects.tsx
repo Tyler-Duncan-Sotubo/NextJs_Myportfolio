@@ -1,10 +1,10 @@
 import React from "react";
 import { projectData } from "@/data/data";
 import Image from "next/image";
-import SkillsButton from "../common/SkillsButton";
+import SkillsButton from "../components/SkillsButton";
 import Link from "next/link";
 import { FaGithub, FaLink } from "react-icons/fa";
-import { Header } from "../common/header";
+import { Header } from "../components/header";
 
 export const Projects = () => {
   return (

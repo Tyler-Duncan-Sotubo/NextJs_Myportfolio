@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import SocialIcons from "../common/SocialIcons";
-import { SlMouse } from "react-icons/sl";
+import SocialIcons from "../components/SocialIcons";
 
 export const Hero = () => {
   return (

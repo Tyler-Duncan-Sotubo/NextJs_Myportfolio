@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import React from "react";
 import "@testing-library/jest-dom";
-import { Header } from "@/components/common/header";
+import { Header } from "@/components/header";
 
 describe("Header", () => {
   it("should render the heading with 2 props name and description", () => {
