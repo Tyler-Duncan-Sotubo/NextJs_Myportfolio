@@ -74,34 +74,31 @@ export const AboutData = [
 
 export const experience = [
   {
-    company: "IT Career Switch, UK",
-    role: "Full Stack Engineer (Traineeship Program)",
-    date: "2023 - 2024",
-    desc: `During my time at IT Career Switch, I learnt the fundamentals of web development, building full-stack applications, 
-    and deploying them to the cloud. I strengthened my skills in development and problem-solving by working on real-world projects.`,
+    company: "tooXclusive",
+    role: "Full Stack Engineer",
+    date: "2023 - present",
+    desc: `Worked with a team of developers to build a music lyrics platform using the M.E.R.N Stack. An e-commerce website for selling sports items using the P.E.R.N Stack. And other projects using the M.E.R.N Stack.`,
     objectives: [
-      "Develop new user-facing features",
-      "Build reusable code and libraries for future use",
-      "Optimize application for maximum speed and scalability",
-      "You can check out my projects down below",
+      "Orchestrated the adoption of a uniform coding style framework that led to a 20% reduction in post-release defects and a 30% increase in developer collaboration and code readability.",
+      "Conducted load testing and fine-tuned codebase to improve application responsiveness; achieved a 45% reduction in latency and facilitated seamless user experience during peak traffic periods.",
+      "Developed and executed a robust data validation system that prevented 90% of invalid inputs from reaching the back end, enhancing data integrity",
     ],
   },
   {
     company: "tooXclusive",
     role: "Frontend Developer",
-    date: "2022 - 2023",
-    desc: `Worked with a team of developers to redesign the wordpress theme of the company's website powered by PHP and MySQL.`,
+    date: "2021 - 2023",
+    desc: `Worked with a team of developers to redesign the wordpress theme of the company's website powered by PHP and MySQL. Worked in a team to Build 3 Apps using the React Native framework.`,
     objectives: [
-      "Crafted a solid design system to enforce consistency across the application.",
-      "Introduced and enforced a consistent coding style across the application.",
-      "Optimize application for maximum speed and scalability",
-      "Assure that all user input is validated before submitting to back-end",
+      "Constructed a cohesive design system that unified visual elements and improved user experience flow, leading to a 50% reduction in bounce rates and a 15% increase in average session duration",
+      "Spearheaded a comprehensive application overhaul project resulting in a 50% decrease in server response time, ensuring seamless user experience and supporting a 20% growth in user base",
+      "	Championed an initiative to ensure product accessibility and inclusively standards were met; conducted company-wide training sessions and audits, resulting in a 40% increase in customer satisfaction ratings",
     ],
   },
   {
     company: "tooXclusive",
     role: "Music Blogger",
-    date: "2019 - 2022",
+    date: "2018 - 2021",
     desc: `Advanced new posts using promotional emails, advertisements and social media, 
     successfully alerting and attracting over 5k new readers monthly through whiteHat SEO and Link Building.`,
     objectives: [

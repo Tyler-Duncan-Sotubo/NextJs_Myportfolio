@@ -11,6 +11,7 @@ interface IFormInput {
   name: String;
   email: String;
   message: String;
+  subject: String;
 }
 
 const inputStyle =
@@ -53,32 +54,50 @@ export const Contact = () => {
           data-testid="form"
           onSubmit={handleSubmit(onSubmit)}
           className="font-Lato w-full mx-auto flex gap-2 flex-col">
-          <div className="flex flex-col">
-            <label htmlFor="name" className="text-skin-accent">
-              Your Name
-            </label>
-            <input
-              id="name"
-              placeholder="name"
-              {...register("name", { required: true })}
-              className={`${inputStyle}`}
-            />
-            {errors.name && (
-              <span className={`${errorStyle}`}>Your name is required</span>
-            )}
+          <div className="flex justify-between gap-5 mt-10">
+            <div className="flex flex-col w-1/2">
+              <label htmlFor="name" className="text-skin-accent">
+                Your Name
+              </label>
+              <input
+                id="name"
+                placeholder="name"
+                {...register("name", { required: true })}
+                className={`${inputStyle}`}
+              />
+              {errors.name && (
+                <span className={`${errorStyle}`}>Your name is required</span>
+              )}
+            </div>
+            <div className="flex flex-col w-1/2">
+              <label htmlFor="email" className="text-skin-accent">
+                Your Email
+              </label>
+              <input
+                id="email"
+                placeholder="email"
+                {...register("email", { required: true })}
+                className={`${inputStyle}`}
+              />
+              {errors.email && (
+                <span className={`${errorStyle}`}>Your email is required</span>
+              )}
+            </div>
           </div>
           <div className="flex flex-col">
-            <label htmlFor="email" className="text-skin-accent">
-              Your Email
+            <label htmlFor="name" className="text-skin-accent">
+              Subject
             </label>
             <input
-              id="email"
-              placeholder="email"
-              {...register("email", { required: true })}
+              id="subject"
+              placeholder="subject"
+              {...register("subject", { required: true })}
               className={`${inputStyle}`}
             />
-            {errors.email && (
-              <span className={`${errorStyle}`}>Your email is required</span>
+            {errors.subject && (
+              <span className={`${errorStyle}`}>
+                Subject of Message is required
+              </span>
             )}
           </div>
           <div className="flex flex-col">
