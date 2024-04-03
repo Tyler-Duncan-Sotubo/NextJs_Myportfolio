@@ -27,12 +27,12 @@ export const Contact = () => {
 
   const onSubmit: SubmitHandler<IFormInput> = (data: any, e: any) => {
     emailjs
-      .send("service_hsvsftt", "template_brr0qvb", data, "CyMbXRk8pnr8YsgLJ")
+      .send("service_ai7oteq", "template_brr0qvb", data, "CyMbXRk8pnr8YsgLJ")
       .then(
         (result) => {
           if (result.text === "OK") {
             toast.success("Message sent", {
-              position: "bottom-right",
+              position: "top-right",
             });
           }
         },
