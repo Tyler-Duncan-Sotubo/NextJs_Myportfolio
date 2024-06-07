@@ -86,7 +86,7 @@ export const experience = [
   },
   {
     company: "tooXclusive",
-    role: "Frontend Developer",
+    role: "React Developer",
     date: "2021 - 2023",
     desc: `Worked with a team of developers to redesign the wordpress theme of the company's website powered by PHP and MySQL. Worked in a team to Build 3 Apps using the React Native framework.`,
     objectives: [
@@ -112,13 +112,32 @@ export const experience = [
 
 export const projectData: IProjects[] = [
   {
+    name: "We Plug Music",
+    madeat: "tooXclusive",
+    img: "/assets/img/projects/weplug.png",
+    desc: `Full Stack Music Distribution website built using the Node Js, NestJS framework, NextJs for Frontend and MongoDB for the database. 
+    The website allows artists to upload their music and get paid for streams and downloads.
+    The Artist Dashboard allows artists to view their earnings and analytics.`,
+    source: "https://github.com/Tyler-Duncan-Sotubo/Full-Stack-Ecommerce",
+    web: "https://weplugmusic.com/",
+    tech: [
+      { name: "Typescript" },
+      { name: "Nest JS" },
+      { name: "Next JS" },
+      { name: "Mongo DB" },
+      { name: "Amazon S3 Bucket" },
+      { name: "Redux Tool Kit" },
+      { name: "Tailwind CSS" },
+    ],
+  },
+  {
     name: "Sportzy",
     madeat: "tooXclusive",
     img: "/assets/img/projects/sportzy.png",
     desc: `Full Stack Ecommerce website built using the P.E.R.N Stack,
     the client side was built using Next Js and Redux Tool Kit for state management.
     Data is fetched from the backend API built using Express Js and PostgreSQL.`,
-    source: "https://github.com/Tyler-Wiz/Full-Stack-Ecommerce",
+    source: "https://github.com/Tyler-Duncan-Sotubo/Full-Stack-Ecommerce",
     web: "https://full-stack-ecommerce-sable.vercel.app/",
     tech: [
       { name: "Javascript" },
@@ -131,13 +150,33 @@ export const projectData: IProjects[] = [
     ],
   },
   {
+    name: "Lyrics Plug",
+    madeat: "tooXclusive",
+    img: "/assets/img/projects/plug.png",
+    desc: `This is a lyrics website, built using the M.E.R.N Stack, 
+    Data is fetched from the backend API built using Express Js and MongoDB. 
+    Client and Admin side are built using Next Js and Redux Tool Kit for state management.`,
+    source: "https://github.com/Tyler-Duncan-Sotubo/Lyrics-App",
+    web: "https://absorbing-stone-production.up.railway.app/",
+    tech: [
+      { name: "Express JS" },
+      { name: "Mongo DB" },
+      { name: "Cloudinary" },
+      { name: "Typescript" },
+      { name: "Next Js" },
+      { name: "Redux Tool Kit" },
+      { name: "Tailwind CSS" },
+    ],
+  },
+  {
     name: "Gazetteer App",
     madeat: "IT Career Switch",
     img: "/assets/img/projects/gazet.png",
     desc: `Gazetteer, a mobile first web application that allows users to search for a location and get information about the location. 
     It provides information about the location, weather, and nearby places of interest. 
     The app was built using HTML, PHP, jQuery/AJAX, Leaflet, Bootstrap, and APIs.`,
-    source: "https://github.com/Tyler-Wiz/tylerDuncan/tree/main/project1",
+    source:
+      "https://github.com/Tyler-Duncan-Sotubo/tylerDuncan/tree/main/project1",
     web: "https://tylersotubo.co.uk/gazetteer/",
     tech: [
       { name: "HTML" },
@@ -153,7 +192,7 @@ export const projectData: IProjects[] = [
     madeat: "IT Career Switch",
     img: "/assets/img/projects/company.png",
     desc: `Company Directory, a mobile first web application that allows users access to the database to add, edit, delete data.it allows users to search or filter company information within the database.`,
-    source: "https://github.com/Tyler-Wiz/Company-Directory",
+    source: "https://github.com/Tyler-Duncan-Sotubo/Company-Directory",
     web: "https://tylersotubo.co.uk/company/",
     tech: [
       { name: "HTML" },
@@ -164,25 +203,7 @@ export const projectData: IProjects[] = [
       { name: "phpMyAdmin" },
     ],
   },
-  {
-    name: "Lyrics Plug",
-    madeat: "tooXclusive",
-    img: "/assets/img/projects/plug.png",
-    desc: `This is a lyrics website, built using the M.E.R.N Stack, 
-    Data is fetched from the backend API built using Express Js and MongoDB. 
-    Client and Admin side are built using Next Js and Redux Tool Kit for state management.`,
-    source: "https://github.com/Tyler-Wiz/Lyrics-App",
-    web: "https://absorbing-stone-production.up.railway.app/",
-    tech: [
-      { name: "Express JS" },
-      { name: "Mongo DB" },
-      { name: "Cloudinary" },
-      { name: "Typescript" },
-      { name: "Next Js" },
-      { name: "Redux Tool Kit" },
-      { name: "Tailwind CSS" },
-    ],
-  },
+
   {
     name: "Smirnoff Party",
     madeat: "MediareachOMD Nigeria",
@@ -192,7 +213,7 @@ export const projectData: IProjects[] = [
     The wesbite focus was to allow users to register for the party with email address and instagram handle.
      The backend API was built using Express Js and PostgreSQL.
      Registered users were stored in a PostgreSQL database and Welcome Email sent with NodeMailer`,
-    source: "https://github.com/Tyler-Wiz/Smirnoff-party",
+    source: "https://github.com/Tyler-Duncan-Sotubo/Smirnoff-party",
     web: "https://smirnoff-party-frontend-production.up.railway.app/",
     tech: [
       { name: "Typescript" },
@@ -210,7 +231,7 @@ export const projectData: IProjects[] = [
     img: "/assets/img/projects/artistApi.png",
     desc: `This is an Open API built using Express Js and PostgreSQL. The project is till in progress.
     The aim is to build an API that can be used by artists to create their profile and share their work.`,
-    source: "https://github.com/Tyler-Wiz/Artist-Profile-API",
+    source: "https://github.com/Tyler-Duncan-Sotubo/Artist-Profile-API",
     web: "/",
     tech: [
       { name: "Javascript" },
@@ -224,7 +245,7 @@ export const projectData: IProjects[] = [
     madeat: "Personal Project",
     img: "/assets/img/projects/version1.png",
     desc: `This is the first version of my portfolio website built using Next Js and Tailwind CSS.`,
-    source: "https://github.com/Tyler-Wiz/Portfolio-V1",
+    source: "https://github.com/Tyler-Duncan-Sotubo/Portfolio-V1",
     web: "https://v1.tylerduncan.dev/",
     tech: [
       { name: "Javascript" },
