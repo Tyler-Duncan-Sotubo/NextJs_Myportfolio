@@ -8,6 +8,7 @@ import {
   FaBootstrap,
   FaGitSquare,
   FaGithub,
+  FaDocker,
 } from "react-icons/fa";
 import {
   SiRedux,
@@ -24,6 +25,7 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiPython,
+  SiAwsamplify,
 } from "react-icons/si";
 
 export const Lang = [
@@ -31,7 +33,6 @@ export const Lang = [
   { name: "Typescript", icon: <SiTypescript /> },
   { name: "HTML", icon: <FaHtml5 /> },
   { name: "CSS", icon: <FaCss3 /> },
-  { name: "PHP", icon: <FaPhp /> },
   { name: "Python", icon: <SiPython /> },
 ];
 
@@ -52,9 +53,11 @@ export const others = [
   { name: "PostgreSQL", icon: <SiPostgresql /> },
   { name: "Git", icon: <FaGitSquare /> },
   { name: "Amazon S3", icon: <SiAmazonaws /> },
+  { name: "Amazon Amplify", icon: <SiAwsamplify /> },
   { name: "Swagger", icon: <SiSwagger /> },
   { name: "OpenAPI", icon: <SiOpenapiinitiative /> },
   { name: "Github", icon: <FaGithub /> },
+  { name: "Docker", icon: <FaDocker /> },
 ];
 
 export const navData: NavData[] = [
@@ -111,6 +114,25 @@ export const experience = [
 ];
 
 export const projectData: IProjects[] = [
+  {
+    name: "AI Icon Generator",
+    madeat: "Upwork",
+    img: "/assets/img/projects/icon.png",
+    desc: `AI Icon Generator is a web application that allows users to generate icons using AI.The web app was built with Next JS and PostgreSQL for the database. The AI Model uses OpenAI's DALL-E model to generate icons.`,
+    source: "https://github.com/Tyler-Duncan-Sotubo/logo-generator",
+    web: "https://iconaistudio.com/",
+    tech: [
+      { name: "Typescript" },
+      { name: "Next JS" },
+      { name: "PostgreSQL" },
+      { name: "Amazon S3 Bucket" },
+      { name: "Tailwind CSS" },
+      { name: "OpenAI" },
+      { name: "NextAuth" },
+      { name: "tRPC" },
+      { name: "Prisma" },
+    ],
+  },
   {
     name: "We Plug Music",
     madeat: "tooXclusive",

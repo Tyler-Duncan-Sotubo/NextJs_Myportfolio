@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const icons = [
-  { icon: <FaGithub />, path: "https://github.com/Tyler-Wiz" },
+  { icon: <FaGithub />, path: "https://github.com/Tyler-Duncan-Sotubo/" },
   {
     icon: <FaLinkedin />,
     path: "https://www.linkedin.com/in/tyler-duncan-sotubo-b2372724a/",

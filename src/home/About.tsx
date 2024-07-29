@@ -39,17 +39,13 @@ export const About = () => {
           ))}
         </div>
         <div className="w-full mx-auto max-w-3xl">
-          <p className="text-xl text-skin-primary  tracking-wide font-regular font-light leading-relaxed ">
-            Started my journey into the world of tech and PHP back in 2019 as a
-            blogger working on the WordPress platform. In 2021, I decided to try
-            my hand at creating custom wordpress themes going head first into
-            the rabbit hole of coding and web development.
-          </p>
           <p className="text-xl text-skin-primary my-6 tracking-wide font-regular font-light leading-relaxed">
-            Fast-forward to today, and I’ve had the privilege of building
-            software for an advertising agency and a start-up. I most enjoy
-            building software in the sweet spot where design and engineering
-            meet — things that look good but are also built well under the hood.
+            Started my journey into the world of tech back in 2019 as a a Web
+            Developer Intent. Fast-forward to today, and I’ve had the privilege
+            of building software for an advertising agency and a start-up. I
+            most enjoy building software in the sweet spot where design and
+            engineering meet — things that look good but are also built well
+            under the hood.
           </p>
           <p className="text-xl text-skin-primary my-6 tracking-wide font-regular font-light leading-relaxed">
             When I’m not at the computer, I’m usually running 5k Marathon,
