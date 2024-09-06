@@ -152,6 +152,42 @@ export const projectData: IProjects[] = [
       { name: "Tailwind CSS" },
     ],
   },
+
+  {
+    name: "Gazetteer App",
+    madeat: "IT Career Switch",
+    img: "/assets/img/projects/gazet.png",
+    desc: `Gazetteer, a mobile first web application that allows users to search for a location and get information about the location. 
+    It provides information about the location, weather, and nearby places of interest. 
+    The app was built using HTML, PHP, jQuery/AJAX, Leaflet, Bootstrap, and APIs.`,
+    source:
+      "https://github.com/Tyler-Duncan-Sotubo/tylerDuncan/tree/main/project1",
+    web: "https://tylersotubo.co.uk/gazetteer/",
+    tech: [
+      { name: "HTML" },
+      { name: "PHP" },
+      { name: "jQuery/AJAX" },
+      { name: "Leaflet" },
+      { name: "Bootstrap" },
+      { name: "APIs" },
+    ],
+  },
+  {
+    name: "Company Directory",
+    madeat: "IT Career Switch",
+    img: "/assets/img/projects/company.png",
+    desc: `Company Directory, a mobile first web application that allows users access to the database to add, edit, delete data.it allows users to search or filter company information within the database.`,
+    source: "https://github.com/Tyler-Duncan-Sotubo/Company-Directory",
+    web: "https://tylersotubo.co.uk/company/",
+    tech: [
+      { name: "HTML" },
+      { name: "PHP" },
+      { name: "jQuery/AJAX" },
+      { name: "Bootstrap" },
+      { name: "MySQL" },
+      { name: "phpMyAdmin" },
+    ],
+  },
   {
     name: "Sportzy",
     madeat: "tooXclusive",
@@ -190,42 +226,6 @@ export const projectData: IProjects[] = [
       { name: "Tailwind CSS" },
     ],
   },
-  {
-    name: "Gazetteer App",
-    madeat: "IT Career Switch",
-    img: "/assets/img/projects/gazet.png",
-    desc: `Gazetteer, a mobile first web application that allows users to search for a location and get information about the location. 
-    It provides information about the location, weather, and nearby places of interest. 
-    The app was built using HTML, PHP, jQuery/AJAX, Leaflet, Bootstrap, and APIs.`,
-    source:
-      "https://github.com/Tyler-Duncan-Sotubo/tylerDuncan/tree/main/project1",
-    web: "https://tylersotubo.co.uk/gazetteer/",
-    tech: [
-      { name: "HTML" },
-      { name: "PHP" },
-      { name: "jQuery/AJAX" },
-      { name: "Leaflet" },
-      { name: "Bootstrap" },
-      { name: "APIs" },
-    ],
-  },
-  {
-    name: "Company Directory",
-    madeat: "IT Career Switch",
-    img: "/assets/img/projects/company.png",
-    desc: `Company Directory, a mobile first web application that allows users access to the database to add, edit, delete data.it allows users to search or filter company information within the database.`,
-    source: "https://github.com/Tyler-Duncan-Sotubo/Company-Directory",
-    web: "https://tylersotubo.co.uk/company/",
-    tech: [
-      { name: "HTML" },
-      { name: "PHP" },
-      { name: "jQuery/AJAX" },
-      { name: "Bootstrap" },
-      { name: "MySQL" },
-      { name: "phpMyAdmin" },
-    ],
-  },
-
   {
     name: "Smirnoff Party",
     madeat: "MediareachOMD Nigeria",
