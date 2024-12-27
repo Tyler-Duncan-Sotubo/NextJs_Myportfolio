@@ -49,7 +49,7 @@ export const Contact = () => {
         name="Send me a message!"
         description="Got a question or proposal, or just want to say hello? Feel free to reach out to me!"
       />
-      <div className="w-[90%] mx-auto lg:w-[80%] md:flex flex md:flex-row flex-col items-center md:gap-10 gap-1">
+      <div className="w-[90%] mx-auto lg:w-[65%] md:flex flex md:flex-row flex-col items-center md:gap-10 gap-1">
         <form
           data-testid="form"
           onSubmit={handleSubmit(onSubmit)}

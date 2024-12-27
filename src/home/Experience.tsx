@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../components/header";
-import { experience, others, Lang, Frameworks } from "@/data/data";
+import { experience } from "@/data/data";
 import { IoCheckmarkDoneOutline } from "react-icons/io5";
 import { FiMinus } from "react-icons/fi";
 
@@ -17,14 +17,11 @@ export default function Experience() {
               <div className="flex gap-3 items-center text-skin-primary md:w-[80%] w-full">
                 <div className="text-xl text-skin-primary font-regular font-light flex flex-col gap-3 ">
                   <div className="flex items-center gap-1">
+                    {/* <p className="text-white text-sm tracing-wide md:text-xl ">
+                      {item.role}
+                    </p> */}
                     <p className="text-white text-sm tracing-wide md:text-2xl font-medium ">
                       {item.company}
-                    </p>
-                    <p className="text-white text-sm tracing-wide md:text-xl ">
-                      <FiMinus />
-                    </p>
-                    <p className="text-white text-sm tracing-wide md:text-xl ">
-                      {item.role}
                     </p>
                   </div>
                   <p className="text-white">{item.desc}</p>

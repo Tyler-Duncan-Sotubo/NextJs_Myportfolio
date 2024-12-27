@@ -16,6 +16,7 @@ export interface ISkills {
 export interface NavData {
   name: string;
   path: string;
+  icon?: any;
 }
 
 export interface IBlog {

@@ -1,12 +1,12 @@
+import Button from "@/components/button";
 import { Nav } from "@/components/Nav";
 import { About } from "@/home/About";
 import { Contact } from "@/home/Contact";
-import Experience from "@/home/Experience";
 import { Footer } from "@/home/Footer";
 import { Hero } from "@/home/Hero";
-import { Projects } from "@/home/Projects";
 import Stack from "@/home/Stack";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,9 +21,12 @@ export default function Home() {
         <Nav />
         <Hero />
         <About />
-        <Projects />
         <Stack />
-        <Experience />
+        <div className="my-4 flex justify-center">
+          <Link href="/resume">
+            <Button name="My Experience" color="bg-skin-herobackground" />
+          </Link>
+        </div>
         <Contact />
         <Footer />
       </main>

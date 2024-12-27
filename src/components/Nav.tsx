@@ -1,15 +1,14 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useEffect, useState } from "react";
 import { navData } from "@/data/data";
-import { Link } from "react-scroll/modules";
+import { Link as Scroll } from "react-scroll/modules";
 import SocialIcons from "./SocialIcons";
-import ThemeSwitcher from "@/theme/ThemeSwitcher";
+import Link from "next/link";
 
 export const Nav = () => {
   const [hamburger, setHamburger] = useState<boolean>(false);
   const [activeIndex, setActiveIndex] = useState();
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [toggle, setToggle] = useState<boolean>(false);
 
   const removeHamburgerOnScroll = () => {
     if (window.scrollY >= 90) {
@@ -25,8 +24,26 @@ export const Nav = () => {
 
   return (
     <>
+      <nav className="md:flex flex-row justify-end  mt-10 text-skin-dark gap-10 hidden mx-auto lg:w-[70%]">
+        {navData.map((item, index: any) => {
+          return (
+            <Link key={index} href={item.path}>
+              <li className="mt-6 capitalize font-Inter md:text-lg text-skin-dark text-3xl font-regular cursor-pointer list-none">
+                <p
+                  onClick={() => setActiveIndex(index)}
+                  className={`duration-300 hover:text-skin-accent flex items-center gap-2 ${
+                    activeIndex === index ? "text-skin-accent" : ""
+                  }`}>
+                  {item.icon}
+                  {item.name}
+                </p>
+              </li>
+            </Link>
+          );
+        })}
+      </nav>
       <nav
-        className={`flex justify-between items-center bg-skin-background w-[90%] mx-auto lg:w-[80%] py-16 md:text-sm text-skin-primary font-Inter absolute top-0  
+        className={`flex md:hidden justify-between items-center bg-skin-background w-[90%] mx-auto lg:w-[80%] py-16 md:text-sm text-skin-primary font-Inter absolute top-0  
          `}>
         <div
           onClick={() => setIsOpen(!isOpen)}
@@ -44,26 +61,19 @@ export const Nav = () => {
         </div>
 
         <ul
-          className={`fixed duration-300 shadow-lg bg-white cursor-pointer top-0 px-10 py-20 z-[9998] h-screen w-full  
-        md:top-6 md:max-w-[370px] md:h-[500px]
+          className={`fixed duration-300 shadow-lg bg-white cursor-pointer top-0 px-10 py-20 z-[9998] h-[500px] w-full  
+        md:top-6 md:hidden
         ${isOpen ? "right-0 md:right-16" : "right-[-400px] opacity-0"}`}>
           {navData.map((item, index: any) => {
             return (
-              <Link
-                key={index}
-                activeClass="active"
-                to={item.path}
-                spy={true}
-                smooth={true}
-                offset={-60}
-                duration={500}
-                onClick={() => setIsOpen(false)}>
-                <li className="mt-6 capitalize font-Inter md:text-lg text-skin-background text-2xl font-regular ">
+              <Link key={index} href={item.path}>
+                <li className="mt-6 capitalize font-Inter md:text-lg text-black text-3xl font-regular cursor-pointer list-none">
                   <p
                     onClick={() => setActiveIndex(index)}
-                    className={`duration-300 hover:text-skin-accent ${
+                    className={`duration-300 hover:text-skin-accent flex items-center gap-2 ${
                       activeIndex === index ? "text-skin-accent" : ""
                     }`}>
+                    {item.icon}
                     {item.name}
                   </p>
                 </li>

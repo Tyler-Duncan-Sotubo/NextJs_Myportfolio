@@ -1,112 +1,147 @@
 import { NavData, IProjects } from "@/lib/interface";
-import {
-  FaPhp,
-  FaHtml5,
-  FaCss3,
-  FaNodeJs,
-  FaReact,
-  FaBootstrap,
-  FaGitSquare,
-  FaGithub,
-  FaDocker,
-} from "react-icons/fa";
-import {
-  SiRedux,
-  SiTailwindcss,
-  SiMongodb,
-  SiAmazonaws,
-  SiJquery,
-  SiExpress,
-  SiSwagger,
-  SiOpenapiinitiative,
-  SiJavascript,
-  SiMysql,
-  SiPostgresql,
-  SiNextdotjs,
-  SiTypescript,
-  SiPython,
-  SiAwsamplify,
-} from "react-icons/si";
+import { FaGithub, FaHome, FaBook } from "react-icons/fa";
+// data.js
 
+// Programming Languages
 export const Lang = [
-  { name: "Javascript", icon: <SiJavascript /> },
-  { name: "Typescript", icon: <SiTypescript /> },
-  { name: "HTML", icon: <FaHtml5 /> },
-  { name: "CSS", icon: <FaCss3 /> },
-  { name: "Python", icon: <SiPython /> },
+  { name: "HTML" },
+  { name: "CSS" },
+  { name: "JavaScript" },
+  { name: "TypeScript" },
+  { name: "Node.js" },
+  { name: "Python" },
 ];
 
+// Libraries & Frameworks
 export const Frameworks = [
-  { name: "React", icon: <FaReact /> },
-  { name: "Next Js", icon: <SiNextdotjs /> },
-  { name: "Express Js", icon: <SiExpress /> },
-  { name: "Node Js", icon: <FaNodeJs /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-  { name: "Bootstrap", icon: <FaBootstrap /> },
-  { name: "jQuery", icon: <SiJquery /> },
-  { name: "Redux", icon: <SiRedux /> },
+  { name: "React" },
+  { name: "React Native" },
+  { name: "Redux" },
+  { name: "Next.js" },
+  { name: "Tailwind CSS" },
+  { name: "jQuery" },
 ];
 
-export const others = [
-  { name: "MySQL", icon: <SiMysql /> },
-  { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "PostgreSQL", icon: <SiPostgresql /> },
-  { name: "Git", icon: <FaGitSquare /> },
-  { name: "Amazon S3", icon: <SiAmazonaws /> },
-  { name: "Amazon Amplify", icon: <SiAwsamplify /> },
-  { name: "Swagger", icon: <SiSwagger /> },
-  { name: "OpenAPI", icon: <SiOpenapiinitiative /> },
-  { name: "Github", icon: <FaGithub /> },
-  { name: "Docker", icon: <FaDocker /> },
+// Others
+export const Others = [
+  { name: "Docker" },
+  { name: "AWS" },
+  { name: "GitHub" },
+  { name: "Kubernetes" },
+  { name: "Jenkins" },
+];
+
+export const database = [
+  { name: "MySQL" },
+  { name: "MongoDB" },
+  { name: "PostgreSQL" },
+  { name: "Redis" },
+];
+
+// Skills Data
+export const skills = [
+  { name: "Web and Software Development" },
+  { name: "Shell Scripting and Automation" },
+  { name: "Public key infrastructure and cryptography" },
+  { name: "Financial Services" },
+  { name: "Strong grasp of Blockchain ecosystem" },
+  {
+    name: "Advanced critical thinker with strong problem solving capablilites",
+  },
+  { name: "Windows and Linux system administration" },
+  { name: "Data analysis and Databases" },
+  { name: "Asynchronous Programming" },
+  { name: "Microservices" },
+  { name: "RESTful HTTP web services" },
+  { name: "Solution architecture" },
 ];
 
 export const navData: NavData[] = [
-  { name: "Home", path: "hero" },
-  { name: "about me", path: "about" },
-  { name: "Curriculum Vitae", path: "stack" },
-  { name: "My projects", path: "projects" },
-  { name: "contact", path: "contact" },
+  { name: "Home", path: "/", icon: <FaHome size={25} /> },
+  { name: "experience", path: "/resume", icon: <FaBook size={25} /> },
+  {
+    name: "Github",
+    path: "https://github.com/Tyler-Duncan-Sotubo",
+    icon: <FaGithub size={25} />,
+  },
 ];
 
 export const AboutData = [
-  { name: "about", path: "about" },
-  { name: "experience", path: "stack" },
-  { name: "projects", path: "projects" },
-  { name: "contact", path: "contact" },
+  { name: "Home", path: "" },
+  { name: "experience", path: "/resume" },
+  { name: "Github", path: "https://github.com/Tyler-Duncan-Sotubo" },
 ];
 
 export const experience = [
   {
-    company: "Freelance",
-    role: "Full Stack Engineer",
-    date: "June 2024 – present",
-    desc: ``,
+    company: "TechNova Solutions",
+    role: "Software Engineer",
+    date: "July 2024 – Present",
+    desc: "As a Software Engineer at TechNova Solutions, I focused on designing and implementing high-performance, scalable backend systems using Node.js and microservices architecture. My responsibilities included developing RESTful APIs, optimizing service performance, and ensuring seamless integration between components in a distributed environment.",
+    objectives: [],
+    accomplishments: [],
+  },
+
+  {
+    company: "Mediareach OMD",
+    role: "Lead Software Engineer",
+    date: "Sept 2023 - June 2024",
+    desc: "",
     objectives: [
-      "Developed an AI-powered icon generator web app integrating OpenAI to create custom icons using carefully crafted prompts. Delivered a seamless and efficient user experience with optimized workflows.",
-      "Built the app using the T3 Stack (Next.js, NextAuth, Prisma, Tailwind CSS, and tRPC) with PostgreSQL as the database. Implemented OAuth for authentication, stored generated images in an S3 bucket, and deployed the app on Amazon Amplify for scalability.",
+      "Spearheaded the design, development, and deployment of multiple full-stack web applications using modern technologies, focusing on scalability, user experience, and operational efficiency.",
+      "Designed and developed four full-stack web applications using Node.js, Next.js, and the P.E.R.N. stack, delivering seamless front-end interfaces and robust back-end functionalities.",
+      "Engineered scalable backends with Node.js, integrating PostgreSQL for secure and efficient data storage and management.",
+    ],
+    accomplishments: [
+      "Successfully delivered four full-stack web applications, contributing to increased client satisfaction and operational efficiency.",
+      "Collaborated with cross-functional teams to deliver projects on time and within budget while ensuring code quality and maintainability.",
+      "Demonstrated strong technical expertise, consistently meeting client expectations with scalable, reliable, and maintainable software solutions.",
     ],
   },
   {
-    company: "tooXclusive",
-    role: "Full Stack Engineer(Node JS & React)",
-    date: "June 2022 – May 2024",
+    company: "Alat Wema Bank",
+    role: "Backend Engineer",
+    date: "June 2022 – August 2023",
+    desc: "",
+    objectives: [
+      "Develop and maintain scalable backend services and APIs using Node.js and TypeScript to support Alat Wema Bank's digital banking solutions.",
+      "Implement robust security measures, including OAuth 2.0 and JWT authentication, to safeguard sensitive customer data and ensure compliance with banking regulations.",
+      "Optimize database performance and ensure data integrity by managing PostgreSQL databases and designing efficient data models.",
+    ],
+    accomplishments: [
+      "Developed and deployed a full-stack AI-powered financial advisory platform, enhancing customer engagement and providing personalized investment insights.",
+      "Led the creation of a real-time transaction monitoring system, significantly reducing fraudulent activities and enhancing the bank's security posture.",
+      "Implemented CI/CD pipelines that accelerated deployment cycles by 50%, ensuring timely delivery of new features and updates.",
+    ],
+  },
+  {
+    company: "tooXclusive Ltd",
+    role: "Fullstack Software Developer",
+    date: "Mar-2019 - May-2022",
     desc: ``,
     objectives: [
-      "Developed a customized Music Distribution Web Application, focusing on a user-friendly interface and a robust Node.js backend. Implemented advanced features like real-time notifications and secure user authentication with MongoDB.",
+      "Developed a customized Web Applications, focusing on a user-friendly interface and a robust Node.js backend. Implemented advanced features like real-time notifications and secure user authentication with MongoDB.",
       "Built and deployed Next.js web apps optimized for responsiveness and user experience, ensuring seamless interactions and enhanced security. Integrated MongoDB for backend support, delivering a reliable and interactive platform.",
-      "Led the development of web apps and backend microservices for 50+ local businesses. The white-label solution included features such as event registration, e-commerce, news feeds, and sponsor management, enhancing the businesses' digital presence.",
       "We used the Nest.js framework within a Node.js environment, deploying the application to Google Kubernetes Engine (GKE). This setup provided scalable and reliable infrastructure through Kubernetes' powerful orchestration tools",
     ],
+    accomplishments: [
+      "Developed a full-stack music distribution website with a user-friendly interface and real-time notifications, enhancing the user experience and engagement.",
+      "Led the development of web apps and backend microservices for 50+ local businesses, providing a white-label solution with advanced features like event registration and e-commerce.",
+      "Developed an innovative customer relationship management software used by the federal government to manage customer loans and complaints which led to 40% reduction in loan defaults.",
+    ],
   },
   {
-    company: "Avida LLC",
-    role: "Web Developer (React)",
-    date: "Jan 2019 - November 2021",
+    company: "",
+    role: "Freelance Software Developer",
+    date: "Jan 2018 - Feb 2019",
     desc: ``,
     objectives: [
-      "Developed dynamic web applications using React.js, leveraging React hooks for state management, integrating RESTful APIs, and collaborating with senior developers to deliver high-quality solutions.",
-      "Designed and implemented user-friendly interfaces, enhancing application performance and responsiveness, and employing modern best practices for component-based architecture and state management.",
-      "Contributed to building and customizing WordPress websites, implementing themes and plugins, and supporting troubleshooting, site performance optimization, and mobile responsiveness.",
+      "Implemented an open-source ERP system for clients",
+      "Developed and maintained websites for clients, ensuring optimal performance and user experience",
+      "leveraging strong understanding of WordPress core to manipulate admin and theme components to deliver quality commercial websites.",
+    ],
+    accomplishments: [
+      "Cleverly managed multiple client domains with an implemented reverse proxy server, ensuring secure and efficient data transfer.",
     ],
   },
 ];

@@ -1,66 +1,24 @@
-import { AboutData } from "@/data/data";
-import React, { useEffect, useState } from "react";
-import { Link as Scroll } from "react-scroll/modules";
-import Button from "../components/button";
-import { FaDownload } from "react-icons/fa";
-import Link from "next/link";
-
 export const About = () => {
-  const [activeIndex, setActiveIndex] = useState<Number>(0);
-
   return (
-    <section id="about" className="font-Inter bg-skin-background md:pb-24">
-      <div className="flex flex-col md:flex-row w-[90%] mx-auto lg:w-[80%] justify-between py-8 mt-10 gap-24">
-        <div className="md:flex flex-col justify-center gap-7 md:w-[35%] w-full hidden">
-          {AboutData.map((item, index) => (
-            <Scroll
-              key={index}
-              activeClass="active"
-              to={item.path}
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={700}>
-              <div
-                key={index}
-                className="flex flex-row items-center gap-4 cursor-pointer group"
-                onMouseEnter={() => setActiveIndex(index)}
-                onMouseLeave={() => setActiveIndex(0)}
-                onClick={() => setActiveIndex(index)}>
-                <div
-                  className={`content-[''] block w-28 h-[3px] duration-300 relative hover:w-32 ${
-                    activeIndex === index
-                      ? "w-32 bg-skin-accent"
-                      : "w-28 bg-skin-primary"
-                  } `}></div>
-                <p className="text-skin-dark uppercase text-sm">{item.name}</p>
-              </div>
-            </Scroll>
-          ))}
-        </div>
-        <div className="w-full mx-auto max-w-3xl">
-          <p className="text-xl text-skin-primary my-6 tracking-wide font-regular font-light leading-relaxed">
-            I build web experiences that are visually appealing, scalable, and
-            technically robust. By combining front-end design with backend
-            development, I focus on performance, accessibility, and
-            maintainability. My work ensures a seamless blend of form, function,
-            and scalability.
+    <section
+      id="about"
+      className="font-Inter bg-skin-background text-skin-primary ">
+      <div className="flex flex-col md:flex-row w-[90%] mx-auto lg:w-[60%] justify-between py-8 mt-10 ">
+        <div className="">
+          <p className="text-xl tracking-wide font-regular font-light leading-relaxed">
+            A team-oriented and self-motivated engineer with personal integrity
+            who seeks to drive excellence in implementation of applications to
+            achieve strategic goals. Seeking the opportunity to leverage
+            expertise across various IT platforms to develop and integrate
+            cutting-edge solutions.
           </p>
-          <p className="text-xl text-skin-primary my-6 tracking-wide font-regular font-light leading-relaxed">
-            When I’m not at the computer, I’m usually running 5k Marathon,
-            reading, playing NBA 2K, NFL Madden or enjoying a game of chess with
-            friends.
-          </p>
+          <div className="text-xl tracking-wide font-regular font-light leading-relaxed mt-8">
+            <p>## my hobbies include ## </p>
+            <p>- Playing and watching football</p>
+            <p>- Playing video games</p>
+            <p>- Exploring</p>
+          </div>
         </div>
-      </div>
-      <div className="flex justify-center md:my-4 mb-32">
-        <Link href="/Tyler-Duncan-Sotubo.pdf" target="_blank" download>
-          <Button
-            name="Download CV"
-            color="bg-skin-herobackground"
-            icon={<FaDownload />}
-          />
-        </Link>
       </div>
     </section>
   );
