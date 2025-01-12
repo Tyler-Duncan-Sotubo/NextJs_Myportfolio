@@ -14,7 +14,7 @@ export const Projects = () => {
       <div className="w-[90%] mx-auto lg:w-[80%]">
         <Header
           name="My Projects"
-          description="Take a look some of my featured projects"
+          description="Take a look at some of my featured projects"
         />
         <div className="mt-4">
           {projectData.slice(0, 4).map((item, index) => (
@@ -22,41 +22,57 @@ export const Projects = () => {
               key={index}
               className={`py-12 flex ${
                 index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
-              } flex-col items-center gap-10 `}>
-              <div className="relative w-full h-[270px] md:h-[300px] md:w-1/2 ">
-                <Image
-                  src={item.img}
-                  alt=""
-                  fill
-                  className="shadow-2xl rounded-xl"
-                />
-              </div>
-              <div className="w-full md:w-1/2">
-                <p className="text-xl capitalize font-semibold text-skin-dark">
-                  {item.name}
-                </p>
-                <div className="flex">
-                  <p className="text-sm font-semibold text-skin-primary">
-                    Made at - {item.madeat}
-                  </p>
+              } flex-col items-center gap-10`}>
+              {/* Project Image and Tech Stack */}
+              <div className="md:w-1/2">
+                <div className="relative w-full h-[300px] md:h-[330px]">
+                  <Image
+                    src={item.img}
+                    alt={item.name}
+                    fill
+                    className="shadow-2xl rounded-xl"
+                  />
                 </div>
-                <div className="flex gap-2 mt-4 flex-wrap ">
-                  {item.tech.map((item: any, index: number) => (
-                    <div key={index}>
-                      <SkillsButton name={item.name} />
+                {/* Tech Stack Icons */}
+                <div className="my-8 flex gap-3 flex-wrap">
+                  {item.techIcons?.map((iconItem: any, techIndex: number) => (
+                    <div key={techIndex}>
+                      <p className="text-skin-accent">{iconItem.icon}</p>
                     </div>
                   ))}
                 </div>
-                <p className="text-lg text-skin-primary my-4 tracking-wide">
-                  {item.desc}
+                {/* Tech Stack Names */}
+                <div className="mt-2 flex gap-2 flex-wrap">
+                  {item.tech.map((techItem: any, techIndex: number) => (
+                    <div key={techIndex}>
+                      <SkillsButton name={techItem.name} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Project Description */}
+              <div className="w-full md:w-1/2">
+                <p className="text-3xl capitalize font-semibold text-skin-dark">
+                  {item.name}
                 </p>
+                <div className="flex">
+                  <p className="text-lg font-semibold text-skin-primary my-1">
+                    Made at - {item.madeat}
+                  </p>
+                </div>
+                {/* Render the description with <p> tags and spacing */}
+                <div
+                  className="text-lg text-skin-primary my-4 tracking-wide space-y-4"
+                  dangerouslySetInnerHTML={{ __html: item.desc }}
+                />
                 <div className="flex gap-10">
                   <Link
                     href={item.source}
                     target="_blank"
                     className="flex items-center gap-2">
                     <FaGithub className="text-skin-dark" />
-                    <p className="text-skin-dark font-semibold hover:scale-90">
+                    <p className="font-semibold hover:scale-90 text-skin-accent text-xl">
                       View Code
                     </p>
                   </Link>
@@ -64,8 +80,8 @@ export const Projects = () => {
                     href={item.web}
                     target="_blank"
                     className="flex items-center gap-2">
-                    <FaLink className=" text-skin-dark" />
-                    <p className=" text-skin-dark font-semibold hover:scale-90">
+                    <FaLink className="text-skin-dark" />
+                    <p className="font-semibold hover:scale-90 text-skin-accent text-xl">
                       Visit Website
                     </p>
                   </Link>

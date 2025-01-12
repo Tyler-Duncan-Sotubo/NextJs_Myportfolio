@@ -2,7 +2,7 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <section className="mt-28 mx-auto w-full text-center">
+    <section className="mt-40 md:mt-28 mx-auto w-full text-center">
       <div className="mt-16">
         <div className="flex flex-col gap-3">
           <h1 className="text-3xl md:text-6xl leading-20 capitalize text-skin-dark tracking-wide font-bold ">

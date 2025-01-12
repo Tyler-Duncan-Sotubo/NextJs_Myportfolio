@@ -6,6 +6,7 @@ export interface IProjects {
   web: string;
   tech: any;
   madeat: string;
+  techIcons?: any;
 }
 
 export interface ISkills {

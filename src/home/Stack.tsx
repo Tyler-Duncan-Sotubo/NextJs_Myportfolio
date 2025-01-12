@@ -20,7 +20,7 @@ export default function Stack() {
 
   return (
     <section
-      className="flex justify-center items-center font-Inter w-[90%] mx-auto lg:w-[60%] mb-20 sm:px-0 "
+      className="flex justify-center items-center font-Inter w-[90%] mx-auto lg:w-[80%] mb-20 sm:px-0 "
       id="stack">
       <div className="w-full">
         <div className="flex flex-col md:flex-row  gap-12 mt-10">

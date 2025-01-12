@@ -1,5 +1,28 @@
 import { NavData, IProjects } from "@/lib/interface";
-import { FaGithub, FaHome, FaBook } from "react-icons/fa";
+import {
+  FaGithub,
+  FaHome,
+  FaBook,
+  FaReact,
+  FaAws,
+  FaStripe,
+  FaPaypal,
+} from "react-icons/fa";
+import {
+  SiNestjs,
+  SiTypescript,
+  SiPostgresql,
+  SiRedis,
+  SiRabbitmq,
+  SiDocker,
+  SiTailwindcss,
+  SiMongodb,
+  SiDjango,
+  SiPython,
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { DiNodejs } from "react-icons/di";
+
 // data.js
 
 // Programming Languages
@@ -74,12 +97,19 @@ export const AboutData = [
 
 export const experience = [
   {
-    company: "TechNova Solutions",
-    role: "Software Engineer",
+    company: "Upwork",
+    role: "Freelance Software Engineer",
     date: "July 2024 – Present",
-    desc: "As a Software Engineer at TechNova Solutions, I focused on designing and implementing high-performance, scalable backend systems using Node.js and microservices architecture. My responsibilities included developing RESTful APIs, optimizing service performance, and ensuring seamless integration between components in a distributed environment.",
-    objectives: [],
-    accomplishments: [],
+    desc: "As a Freelance Software Engineer on Upwork, I collaborate with clients worldwide to deliver custom, high-quality web solutions. My work includes developing scalable backend systems using Node.js and microservices, building RESTful APIs, and creating efficient front-end components with modern frameworks like React. I ensure seamless integration, performance optimization, and client satisfaction by tailoring solutions to specific project requirements.",
+    objectives: [
+      "Delivering robust and scalable web applications for clients in various industries.",
+      "Providing technical expertise and creative solutions for challenging project requirements.",
+    ],
+    accomplishments: [
+      "Successfully completed 10+ projects with 5-star client reviews on Upwork.",
+      "Optimized application performance for a client’s e-commerce platform, reducing server response time by 40%.",
+      "Implemented secure, scalable microservices for multiple clients, enabling seamless data communication across distributed systems.",
+    ],
   },
 
   {
@@ -148,10 +178,47 @@ export const experience = [
 
 export const projectData: IProjects[] = [
   {
+    name: "Pro Learning App",
+    madeat: "Upwork",
+    img: "/assets/img/projects/pro.jpg",
+    desc: `<p>Pro Learning is an advanced Learning Management System (LMS) designed for seamless and scalable learning experiences. Built using React Native, it offers a highly intuitive and responsive user interface, ensuring smooth navigation for learners.</p>
+         <p>The backend is powered by NestJS in a microservices architecture, enabling high performance and scalability. PostgreSQL, coupled with Redis, ensures efficient data management and caching, while RabbitMQ facilitates reliable communication between distributed services.</p>
+         <p>The app is backend is deployed on AWS, leveraging Docker for containerization and Drizzle ORM for optimized database interactions. For secure payment processing, it integrates seamlessly with PayPal.</p>`,
+    source:
+      "https://play.google.com/store/apps/details?id=com.tylerappdev.jambeLearningapp",
+    web: "https://play.google.com/store/apps/details?id=com.tylerappdev.jambeLearningapp",
+    tech: [
+      { name: "React Native" },
+      { name: "Nest JS (Micro-Service)" },
+      { name: "Typescript" },
+      { name: "PostgreSQL" },
+      { name: "AWS" },
+      { name: "Redis" },
+      { name: "RabbitMQ" },
+      { name: "Docker" },
+      { name: "Drizzle ORM" },
+      { name: "Paypal" },
+    ],
+    techIcons: [
+      { icon: <FaReact size={40} /> },
+      { icon: <DiNodejs size={40} /> },
+      { icon: <SiNestjs size={40} /> },
+      { icon: <SiTypescript size={40} /> },
+      { icon: <SiPostgresql size={40} /> },
+      { icon: <SiRedis size={40} /> },
+      { icon: <FaAws size={40} /> },
+      { icon: <SiRabbitmq size={40} /> },
+      { icon: <SiDocker size={40} /> },
+      { icon: <FaPaypal size={40} /> },
+    ],
+  },
+  {
     name: "AI Icon Generator",
     madeat: "Upwork",
     img: "/assets/img/projects/icon.png",
-    desc: `AI Icon Generator is a web application that allows users to generate icons using AI.The web app was built with Next JS and PostgreSQL for the database. The AI Model uses OpenAI's DALL-E model to generate icons.`,
+    desc: `<p>AI Icon Generator is a web application that empowers users to create custom icons using artificial intelligence. Developed with Next.js, it features a highly interactive and modern front-end interface.</p>
+         <p>The AI model leverages OpenAI’s DALL-E to generate unique icons, while PostgreSQL serves as the reliable database. The application also integrates Amazon S3 for efficient storage, NextAuth for secure user authentication, and Stripe for streamlined payment processing.</p>
+         <p>The combination of tRPC and Prisma ensures seamless API communication and robust database management, with Tailwind CSS enhancing the visual appeal.</p>`,
     source: "https://github.com/Tyler-Duncan-Sotubo/logo-generator",
     web: "https://iconaistudio.com/",
     tech: [
@@ -164,15 +231,24 @@ export const projectData: IProjects[] = [
       { name: "NextAuth" },
       { name: "tRPC" },
       { name: "Prisma" },
+      { name: "Stripe" },
+    ],
+    techIcons: [
+      { icon: <SiTypescript size={40} /> },
+      { icon: <TbBrandNextjs size={40} /> },
+      { icon: <SiPostgresql size={40} /> },
+      { icon: <FaAws size={40} /> },
+      { icon: <SiTailwindcss size={40} /> },
+      { icon: <FaStripe size={40} /> },
     ],
   },
   {
     name: "We Plug Music",
-    madeat: "tooXclusive",
+    madeat: "Upwork",
     img: "/assets/img/projects/weplug.png",
-    desc: `Full Stack Music Distribution website built using the Node Js, NestJS framework, NextJs for Frontend and MongoDB for the database. 
-    The website allows artists to upload their music and get paid for streams and downloads.
-    The Artist Dashboard allows artists to view their earnings and analytics.`,
+    desc: `<p>We Plug Music is a full-stack music distribution platform that empowers artists to share their music and earn from streams and downloads. Built with Node.js and NestJS for a scalable and secure backend, and Next.js for a dynamic front-end, the platform delivers an exceptional user experience.</p>
+         <p>MongoDB ensures efficient data management, while the artist dashboard provides insightful analytics and earnings tracking. Integrated with Amazon S3 for secure file storage and PayPal for payments, this system offers a comprehensive solution for music distribution.</p>
+         <p>Redux Toolkit ensures state management, while Tailwind CSS provides a sleek, modern interface.</p>`,
     source: "https://github.com/Tyler-Duncan-Sotubo/Full-Stack-Ecommerce",
     web: "https://weplugmusic.com/",
     tech: [
@@ -183,13 +259,26 @@ export const projectData: IProjects[] = [
       { name: "Amazon S3 Bucket" },
       { name: "Redux Tool Kit" },
       { name: "Tailwind CSS" },
+      { name: "Paypal" },
+    ],
+    techIcons: [
+      { icon: <DiNodejs size={40} /> },
+      { icon: <SiTypescript size={40} /> },
+      { icon: <SiNestjs size={40} /> },
+      { icon: <TbBrandNextjs size={40} /> },
+      { icon: <SiMongodb size={40} /> },
+      { icon: <FaAws size={40} /> },
+      { icon: <SiTailwindcss size={40} /> },
+      { icon: <FaPaypal size={40} /> },
     ],
   },
   {
     name: "Smirnoff Party",
     madeat: "MediareachOMD Nigeria",
     img: "/assets/img/projects/Smirnoff2024.png",
-    desc: `Global Client Smirnoff's project for the Smirnoff Party Campaign. The website was built using the T3 Stack.The website focus was to allow users to register for the party with email address and instagram handle.Registered users are stored in a PostgreSQL database and QR code generated for entry and Welcome Email sent with SendGrid`,
+    desc: `<p>The Smirnoff Party campaign website is a dynamic event registration platform built using the T3 Stack. Users can register with their email and Instagram handle, with registrations securely stored in a PostgreSQL database.</p>
+         <p>Upon successful registration, users receive a QR code for entry and a welcome email via SendGrid. The front-end is crafted with Next.js and styled using Tailwind CSS, ensuring a modern and user-friendly interface.</p>
+         <p>Amazon S3 manages file storage, while tRPC and Prisma handle API and database interactions for a seamless backend experience.</p>`,
     source: "https://github.com/Tyler-Duncan-Sotubo/Full-Stack-Ecommerce",
     web: "https://weplugmusic.com/",
     tech: [
@@ -202,6 +291,13 @@ export const projectData: IProjects[] = [
       { name: "NextAuth" },
       { name: "tRPC" },
       { name: "Prisma" },
+    ],
+    techIcons: [
+      { icon: <SiTypescript size={40} /> },
+      { icon: <TbBrandNextjs size={40} /> },
+      { icon: <SiPostgresql size={40} /> },
+      { icon: <FaAws size={40} /> },
+      { icon: <SiTailwindcss size={40} /> },
     ],
   },
 

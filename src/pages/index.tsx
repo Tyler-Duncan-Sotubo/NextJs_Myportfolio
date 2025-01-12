@@ -4,6 +4,7 @@ import { About } from "@/home/About";
 import { Contact } from "@/home/Contact";
 import { Footer } from "@/home/Footer";
 import { Hero } from "@/home/Hero";
+import { Projects } from "@/home/Projects";
 import Stack from "@/home/Stack";
 import Head from "next/head";
 import Link from "next/link";
@@ -27,6 +28,7 @@ export default function Home() {
             <Button name="My Experience" color="bg-skin-herobackground" />
           </Link>
         </div>
+        <Projects />
         <Contact />
         <Footer />
       </main>
